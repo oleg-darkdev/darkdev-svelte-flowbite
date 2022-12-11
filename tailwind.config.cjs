@@ -6,8 +6,8 @@ const config = {
 
         theme: {
 		colors: {
-			dark: '#343434',
-                        current: '#F3E600'
+			dark: '#12100B',
+                        light: '#F3E600'
 		},
 		extend: {}
 	},
