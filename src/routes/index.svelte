@@ -228,7 +228,7 @@ let openNav = false;
             </div>
         </div>
         <div style="background-image: url(/terms/terms_ranking.svg); " class="max-w-sm card-ranking items-center flex">
-            <div style="height: 180px; width: 400px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2 ">
+            <div style="height: 180px; width: 360px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2 ">
 
                 <span class="text-4xl font-impact tracking-tight text-white text-center">
                     Rankinging 
@@ -286,9 +286,9 @@ let openNav = false;
  
 
 <section class="w-full h-auto flex justify-center bg-gray-100">
-    <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center pr-2 pl-2">
-        <img src="./avatar_org.png" class="w-full -mb-10" alt="">
-        <div class="h-auto rounded-lg max-w-sm  bg-dark p-8">
+    <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center">
+        <img src="./avatar_org.png" class="w-full -mb-10" alt="Photo organisator">
+        <div class="h-auto rounded-lg max-w-sm  bg-dark pt-8 pb-8 pr-4 pl-4">
             <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
                 Sędzia i organizator
             </h2>
