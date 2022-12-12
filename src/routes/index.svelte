@@ -109,22 +109,22 @@ let openNav = false;
   <div class="lg:mt-10 lg:bg-transparent  md:bg-transparent  bg-white w-full flex justify-center" >
         <ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
-                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     O turnieju 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Nagrody
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Regulamin 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Sponsorzy
                 </a>
             </li> 
@@ -137,8 +137,8 @@ let openNav = false;
     </h1>
 </section>
 
-<section class="w-full h-auto lg:pb-12 md:pb-12 pb-4   flex justify-center">
-    <div class="m-2 h-auto rounded-lg max-w-2xl bg-dark p-8">
+<section class="w-full h-auto lg:pb-12 md:pb-12 pb-12 flex justify-center">
+    <div class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
             Turniej Żółty słoń"
         </h2>
@@ -218,7 +218,7 @@ let openNav = false;
     </h2>
     <div class="flex flex-row flex-wrap w-full  justify-center cards-wrap">
         <div style="background-image: url(/terms/terms_clocks.svg);" class="card-term items-end flex">
-            <div style="height: 200px; width: 380px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
+            <div style="height: 200px; width: 360px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2">
                 <span class="text-8xl font-impact tracking-tight text-white text-center">
                     10 min.
                 </span> 
@@ -228,7 +228,7 @@ let openNav = false;
             </div>
         </div>
         <div style="background-image: url(/terms/terms_ranking.svg); " class="max-w-sm card-ranking items-center flex">
-            <div style="height: 180px; width: 420px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
+            <div style="height: 180px; width: 400px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2 ">
 
                 <span class="text-4xl font-impact tracking-tight text-white text-center">
                     Rankinging 
@@ -240,7 +240,7 @@ let openNav = false;
         </div>
 
         <div style="background-image: url(/terms/terms_system.svg); " class="card-term items-end flex">
-            <div style="height: 200px; width: 380px;"  class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
+            <div style="height: 200px; width: 360px;"  class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2">
                 <span class="text-7xl font-impact tracking-tight text-white text-center">
                     Szwajcarski
                 </span> 
@@ -288,7 +288,7 @@ let openNav = false;
 <section class="w-full h-auto flex justify-center bg-gray-100">
     <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center pr-2 pl-2">
         <img src="./avatar_org.png" class="w-full -mb-10" alt="">
-        <div class="h-auto rounded-lg max-w-md m-2 bg-dark p-8">
+        <div class="h-auto rounded-lg max-w-sm  bg-dark p-8">
             <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
                 Sędzia i organizator
             </h2>
