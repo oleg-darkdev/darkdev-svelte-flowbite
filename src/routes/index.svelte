@@ -109,22 +109,22 @@ let openNav = false;
   <div class="lg:mt-10 lg:bg-transparent  md:bg-transparent  bg-white w-full flex justify-center" >
         <ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
-                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     O turnieju 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Nagrody
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Regulamin 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Sponsorzy
                 </a>
             </li> 
@@ -132,14 +132,14 @@ let openNav = false;
     </div> 
 
 
-    <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white anton-font lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
+    <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
         Comiesięczny turniej szachówy "Żółty słoń"
     </h1>
 </section>
 
-<section class="w-full h-auto lg:pb-12 md:pb-12 pb-4  lg:pt-12 md:pt-12 flex justify-center">
+<section class="w-full h-auto lg:pb-12 md:pb-12 pb-4   flex justify-center">
     <div class="m-2 h-auto rounded-lg max-w-2xl bg-dark p-8">
-        <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
+        <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
             Turniej Żółty słoń"
         </h2>
         <p class="text-gray-100 text-2xl mb-4">
@@ -166,7 +166,7 @@ let openNav = false;
 </section>
 
 <section class="partners bg-dark w-full pt-12 pb-12 flex flex-col items-center">
-    <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
+    <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Sponsorzy
     </h2>
     <div class="flex flex-row flex-wrap w-full justify-center mb-2">
@@ -179,7 +179,7 @@ let openNav = false;
             </a>
         {/each}
     </div>
-    <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
+    <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Organizatorzy
     </h2>
     <div class="flex flex-row flex-wrap w-full justify-center mb-10">
@@ -195,7 +195,7 @@ let openNav = false;
 
 
     <div class="flex flex-col flex-wrap w-full items-center">
-        <p class="text-white text-4xl m-1 anton-font max-w-2xl text-center">
+        <p class="text-white text-4xl m-1 font-impact max-w-2xl text-center">
             Chciałbyś być jednym z organizatorów lub sponsorów? wspieraj projekt
         </p>
         <div class="flex flex-row ">
@@ -213,16 +213,16 @@ let openNav = false;
 
 
 <section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-gray-100">
-    <h2 class="w-full text-center text-dark anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
+    <h2 class="w-full text-center text-dark font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Regulamin turnieju "Żółty słoń"
     </h2>
     <div class="flex flex-row flex-wrap w-full  justify-center cards-wrap">
         <div style="background-image: url(/terms/terms_clocks.svg);" class="card-term items-end flex">
             <div style="height: 200px; width: 380px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
-                <span class="text-8xl anton-font tracking-tight text-white text-center">
+                <span class="text-8xl font-impact tracking-tight text-white text-center">
                     10 min.
                 </span> 
-                <span class="text-4xl anton-font tracking-tight text-white text-center">
+                <span class="text-4xl font-impact tracking-tight text-white text-center">
                     na jednego gracza
                 </span> 
             </div>
@@ -230,10 +230,10 @@ let openNav = false;
         <div style="background-image: url(/terms/terms_ranking.svg); " class="max-w-sm card-ranking items-center flex">
             <div style="height: 180px; width: 420px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
 
-                <span class="text-4xl anton-font tracking-tight text-white text-center">
+                <span class="text-4xl font-impact tracking-tight text-white text-center">
                     Rankinging 
                 </span> 
-                <span class="text-7xl anton-font tracking-tight text-white text-center">
+                <span class="text-7xl font-impact tracking-tight text-white text-center">
                     1400-2000
                 </span> 
             </div>
@@ -241,10 +241,10 @@ let openNav = false;
 
         <div style="background-image: url(/terms/terms_system.svg); " class="card-term items-end flex">
             <div style="height: 200px; width: 380px;"  class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
-                <span class="text-7xl anton-font tracking-tight text-white text-center">
+                <span class="text-7xl font-impact tracking-tight text-white text-center">
                     Szwajcarski
                 </span> 
-                <span class="text-4xl anton-font tracking-tight text-white text-center">
+                <span class="text-4xl font-impact tracking-tight text-white text-center">
                     system rozgrywek
                 </span> 
             </div>
@@ -255,7 +255,7 @@ let openNav = false;
 
 
 <section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-dark">
-    <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
+    <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Nagrody turnieju "Żółty słoń"
     </h2>
     <div   class="flex flex-row flex-wrap flex-wrap justify-center ">
@@ -263,10 +263,10 @@ let openNav = false;
     
         <div style="background-image: url({honor.img});" class="card-honor m-2 -mt-20 items-end flex max-w-sm">
             <div style="height: 200px; width: 100%;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
-                <span class="text-6xl anton-font tracking-tight text-white text-center">
+                <span class="text-6xl font-impact tracking-tight text-white text-center">
                     {honor.title} 
                 </span> 
-                <!-- <span class="text-4xl anton-font tracking-tight text-white text-center">
+                <!-- <span class="text-4xl font-impact tracking-tight text-white text-center">
                     na jednego gracza
                 </span>  -->
                 <ul class="text-light  max-w-md list-disc list-inside space-y-1">
@@ -287,12 +287,12 @@ let openNav = false;
 
 <section class="w-full h-auto flex justify-center bg-gray-100">
     <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center pr-2 pl-2">
-        <img src="./avatar_org.png" class="w-full -mb-8" alt="">
-        <div class="h-auto rounded-lg max-w-lg bg-dark p-8">
-            <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl ">
+        <img src="./avatar_org.png" class="w-full -mb-10" alt="">
+        <div class="h-auto rounded-lg max-w-md m-2 bg-dark p-8">
+            <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
                 Sędzia i organizator
             </h2>
-            <h3 class="w-full text-center text-light anton-font text-7xl ">
+            <h3 class="w-full text-center text-light font-impact text-7xl ">
                 Oleg Medvedev
             </h3>
             <ul class="text-light pl-10 max-w-md list-disc list-inside space-y-1">
