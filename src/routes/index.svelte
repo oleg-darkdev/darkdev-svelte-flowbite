@@ -1,6 +1,5 @@
 <script>
-    import { Button } from 'flowbite-svelte';
-
+    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 
     const organisators = [
 			{
@@ -33,6 +32,70 @@ const sponsors = [
 				title: 'ITingo'
 			}
 		];
+
+
+const honorsList = [
+    {
+        img: '/honors/honors_first.svg',
+        title: '1 miejsce',
+        awards: [
+            'Medal pamiątkowa',
+            'Dyplom',
+            'Herbata terapeutyczna',
+        ]
+    },
+    {
+        img: '/honors/honors_second.svg',
+        title: '2 miejsce',
+        awards: [
+            'Medal pamiątkowa',
+            'Dyplom',
+            'Herbata terapeutyczna',
+        ]
+    },
+    {
+        img: '/honors/honors_third.svg',
+        title: '3 miejsce',
+        awards: [
+            'Medal pamiątkowa',
+            'Dyplom',
+            'Herbata terapeutyczna',
+        ]
+    },
+];
+
+
+const organisatoValues = [
+    'Kandydat na mistrza sportu',
+    'Mistrz Białorusi 2005-2006 r.',
+    'Wielokrotny mistrz międzynarodowych turniejów szachowych. ',
+];
+
+const socialMedia = [
+    {
+        link: '',
+        img: './social/facebook.svg',
+        title: ''
+    },
+    {
+        link: '',
+        img: './social/instagram.svg',
+        title: ''
+    },
+    {
+        link: '',
+        img: './social/telegram.svg',
+        title: ''
+    },
+    {
+        link: '',
+        img: './social/linkedin.svg',
+        title: ''
+    }
+];
+
+
+let openNav = false;
 </script>
 
 
@@ -42,25 +105,63 @@ const sponsors = [
 
 
 
-<section class="banner w-full pb-12 flex justify-center">
-    <h1 class="lg:pt-32 md:pt-14 pt-14 text-center text-white anton-font lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl w-8/12">Comiesięczny turniej szachówy "Żółty słoń"</h1>
+<section class="banner w-full pb-12 flex flex-col items-center">
+  <div class="lg:mt-10 lg:bg-transparent  md:bg-transparent  bg-white w-full flex justify-center" >
+        <ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
+            <li>
+                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    O turnieju 
+                </a>
+            </li> 
+            <li>
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    Nagrody
+                </a>
+            </li> 
+            <li>
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    Regulamin 
+                </a>
+            </li> 
+            <li>
+                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-4 pl-3 md:p-0 rounded md:border-0 anton-font text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    Sponsorzy
+                </a>
+            </li> 
+        </ul>
+    </div> 
+
+
+    <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white anton-font lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
+        Comiesięczny turniej szachówy "Żółty słoń"
+    </h1>
 </section>
 
-<section class="w-full h-auto pb-12 pt-12 flex justify-center">
-    <div class="h-auto rounded-lg max-w-2xl bg-dark p-8">
+<section class="w-full h-auto lg:pb-12 md:pb-12 pb-4  lg:pt-12 md:pt-12 flex justify-center">
+    <div class="m-2 h-auto rounded-lg max-w-2xl bg-dark p-8">
         <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
             Turniej Żółty słoń"
         </h2>
-        <p class="text-light text-2xl m-1">
+        <p class="text-gray-100 text-2xl mb-4">
             Comiesięczny turniej szachów klasycznych "Żółty słoń"
         </p>
-        <p class="text-light text-2xl m-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>        <!-- <ul class="list-disc list-inside text-light">
-            <li class="text-light text-2xl">
-                Design
-            </li> 
-        </ul> -->
+        <p class="text-gray-100 text-2xl mb-4">
+            W naszym turnieju znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. Ranking graczy 1400-2000. Zgłoszenia rejestrować będziemy drogą mailową (44hackerspace@gmail.com), oraz poprzez zapisy w Sopoteke, przed rozpoczęciem turnieju.
+        </p>    
+        <p class="text-gray-100 text-2xl mb-4">
+            Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
+        </p>    
+        <p class="text-gray-100 text-2xl mb-8">
+            Turniej odbywa się co miesiąc między 10 a 20 dniami miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
+        </p> 
+        <div class="flex flex-row justify-center w-full">
+            {#each socialMedia as media}
+                <a href="{media.link}">
+                    <img alt="{media.title}" src="{media.img}" 
+                    class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
+                </a>
+            {/each}
+        </div>
     </div>
 </section>
 
@@ -111,11 +212,11 @@ const sponsors = [
 
 
 
-<section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-white">
+<section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-gray-100">
     <h2 class="w-full text-center text-dark anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Regulamin turnieju "Żółty słoń"
     </h2>
-    <div class="flex flex-row w-full  justify-center cards-wrap">
+    <div class="flex flex-row flex-wrap w-full  justify-center cards-wrap">
         <div style="background-image: url(/terms/terms_clocks.svg);" class="card-term items-end flex">
             <div style="height: 200px; width: 380px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
                 <span class="text-8xl anton-font tracking-tight text-white text-center">
@@ -157,23 +258,67 @@ const sponsors = [
     <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Nagrody turnieju "Żółty słoń"
     </h2>
-    <div   class="row flex-wrap cards-wrap">
-        <div style="background-image: url(/honors/honors_first.svg);" class="card-honor items-end flex max-w-sm">
+    <div   class="flex flex-row flex-wrap flex-wrap justify-center ">
+    {#each honorsList as honor}
+    
+        <div style="background-image: url({honor.img});" class="card-honor m-2 -mt-20 items-end flex max-w-sm">
             <div style="height: 200px; width: 100%;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
                 <span class="text-6xl anton-font tracking-tight text-white text-center">
-                    1 miejsce
+                    {honor.title} 
                 </span> 
-                <span class="text-4xl anton-font tracking-tight text-white text-center">
+                <!-- <span class="text-4xl anton-font tracking-tight text-white text-center">
                     na jednego gracza
-                </span> 
+                </span>  -->
+                <ul class="text-light  max-w-md list-disc list-inside space-y-1">
+                    {#each honor.awards as award}
+                    <li class="">
+                        {award}
+                    </li> 
+                    {/each}
+                </ul>
+            </div>
+        </div>
+    {/each}
+</div>
+</section>
+
+
+ 
+
+<section class="w-full h-auto flex justify-center bg-gray-100">
+    <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center pr-2 pl-2">
+        <img src="./avatar_org.png" class="w-full -mb-8" alt="">
+        <div class="h-auto rounded-lg max-w-lg bg-dark p-8">
+            <h2 class="w-full text-center text-white anton-font lg:text-5xl md:text-4xl text-4xl ">
+                Sędzia i organizator
+            </h2>
+            <h3 class="w-full text-center text-light anton-font text-7xl ">
+                Oleg Medvedev
+            </h3>
+            <ul class="text-light pl-10 max-w-md list-disc list-inside space-y-1">
+                {#each organisatoValues as value}
+                    <li class="">
+                        {value}
+                    </li> 
+                {/each}
+            </ul>
+            <div class="flex justify-center">
+            <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
+                Wszystkie dane
+            </button>
             </div>
         </div>
     </div>
 </section>
 
-<section class="w-full pt-12 pb-12 h-auto">
+
+
+<!-- <section class="w-full pt-12 pb-12 h-auto">
 
 </section>
+<section class="w-full pt-12 pb-12 h-auto">
+
+</section> -->
 
 <style>
     .banner {
@@ -224,8 +369,6 @@ const sponsors = [
         background-position: center;
         background-size: cover;
     }
-
-
 
     .card-honor {
         height: 640px;

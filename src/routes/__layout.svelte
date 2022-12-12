@@ -6,7 +6,7 @@
 
 <style>
         :global(.anton-font) {
-                font-family: 'Anton', serif;
+                font-family: 'Anton';
                  line-height: 1.2;
         }
 </style>
