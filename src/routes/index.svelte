@@ -342,7 +342,7 @@ let openNav = false;
 
     @media (min-width: 1024px) {
         .banner {
-            min-height: 100vh;
+            height: 800px;
             background-size: contain;
         }
     }
