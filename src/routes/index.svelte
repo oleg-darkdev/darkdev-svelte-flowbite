@@ -109,34 +109,36 @@ let openNav = false;
   <div class="lg:mt-10 lg:bg-transparent  md:bg-transparent  bg-white w-full flex justify-center" >
         <ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
             <li>
-                <a href="#" class="lg:text-3xl text-1xl block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#about" class="lg:text-3xl text-1xl block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     O turnieju 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
-                    Nagrody
-                </a>
-            </li> 
-            <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#terms" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Regulamin 
                 </a>
             </li> 
             <li>
-                <a href="#" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
-                    Sponsorzy
+                <a href="#prizes" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    Nagrody
                 </a>
             </li> 
+            <li>
+                <a href="#referee" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                    Sędzia
+                </a>
+            </li>             
         </ul>
     </div> 
 
 
-    <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
+    <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact xl:text-6xl lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
         Comiesięczny turniej szachówy "Żółty słoń"
     </h1>
 </section>
 
+
+<a id="about"></a>
 <section class="w-full h-auto lg:pb-12 md:pb-12 pb-12 flex justify-center">
     <div class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
@@ -148,11 +150,11 @@ let openNav = false;
         <p class="text-gray-100 text-2xl mb-4">
             W naszym turnieju znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. Ranking graczy 1400-2000. Zgłoszenia rejestrować będziemy drogą mailową (44hackerspace@gmail.com), oraz poprzez zapisy w Sopoteke, przed rozpoczęciem turnieju.
         </p>    
-        <p class="text-gray-100 text-2xl mb-4">
+        <!-- <p class="text-gray-100 text-2xl mb-4">
             Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
-        </p>    
+        </p>     -->
         <p class="text-gray-100 text-2xl mb-8">
-            Turniej odbywa się co miesiąc między 10 a 20 dniami miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
+            Turniej odbywa się co miesiąc każda środa w pierwszym tygodniu miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
         </p> 
         <div class="flex flex-row justify-center w-full">
             {#each socialMedia as media}
@@ -165,6 +167,7 @@ let openNav = false;
     </div>
 </section>
 
+<a id=""></a>
 <section class="partners bg-dark w-full pt-12 pb-12 flex flex-col items-center">
     <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Sponsorzy
@@ -211,7 +214,7 @@ let openNav = false;
 </section>
 
 
-
+<a id="terms"></a>
 <section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-gray-100">
     <h2 class="w-full text-center text-dark font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Regulamin turnieju "Żółty słoń"
@@ -240,8 +243,8 @@ let openNav = false;
         </div>
 
         <div style="background-image: url(/terms/terms_system.svg); " class="card-term items-end flex">
-            <div style="height: 200px; width: 360px;"  class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2">
-                <span class="text-7xl font-impact tracking-tight text-white text-center">
+            <div style="height: 200px; width: 360px; justify-content: center; "  class="bg-dark text-light rounded-lg border border-light shadow-md flex  max-w-sm flex-col lg:p-4 md:p-4 p-2">
+                <span class="text-6xl font-impact tracking-tight text-white text-center">
                     Szwajcarski
                 </span> 
                 <span class="text-4xl font-impact tracking-tight text-white text-center">
@@ -253,7 +256,7 @@ let openNav = false;
     </div>
 </section>
 
-
+<a id="prizes"></a>
 <section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-dark">
     <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Nagrody turnieju "Żółty słoń"
@@ -284,7 +287,7 @@ let openNav = false;
 
 
  
-
+<a id="referee"></a>
 <section class="w-full h-auto flex justify-center bg-gray-100">
     <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center">
         <img src="./avatar_org.png" class="w-full -mb-10" alt="Photo organisator">
@@ -302,10 +305,20 @@ let openNav = false;
                     </li> 
                 {/each}
             </ul>
-            <div class="flex justify-center">
+            <div class="mb-4 flex justify-center">
             <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
                 Wszystkie dane
             </button>
+            </div> 
+            <div class="flex flex-row justify-center w-full">
+                    <a href="">
+                        <img alt="facebook_profile" src="./social/facebook.svg" 
+                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
+                    </a>
+                    <a href="">
+                        <img alt="linkedin_profile" src="./social/linkedin.svg" 
+                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
+                    </a>
             </div>
         </div>
     </div>
