@@ -142,19 +142,20 @@ let openNav = false;
 <section class="w-full h-auto lg:pb-12 md:pb-12 pb-12 flex justify-center">
     <div class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
-            Turniej Żółty słoń"
+            Comiesięczny turniej "Żółty słoń"
         </h2>
-        <p class="text-gray-100 text-2xl mb-4">
-            Comiesięczny turniej szachów klasycznych "Żółty słoń"
-        </p>
-        <p class="text-gray-100 text-2xl mb-4">
-            W naszym turnieju znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. Ranking graczy 1400-2000. Zgłoszenia rejestrować będziemy drogą mailową (44hackerspace@gmail.com), oraz poprzez zapisy w Sopoteke, przed rozpoczęciem turnieju.
+        <p class="text-gray-100 text-2xl mb-4 text-center">
+            W naszym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. <span class="text-light ">Ranking graczy 1400-2000.</span>   
         </p>    
+        <p class="text-gray-100 text-2xl mb-4 text-center">
+            Zgłoszenie rejestrowane drogą mailową <span class="inline-flex items-center hover:underline text-light underline hover:no-underline">yellow_elephant.pl@outlook.com</span>, oraz poprzez zapisy przed rozpoczęciem turnieju.
+
+        </p>   
         <!-- <p class="text-gray-100 text-2xl mb-4">
             Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
         </p>     -->
-        <p class="text-gray-100 text-2xl mb-8">
-            Turniej odbywa się co miesiąc każda środa w pierwszym tygodniu miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
+        <p class="text-gray-100 text-2xl mb-8 text-center">
+            Turniej odbywa się co miesiąc - każda środa w pierwszym tygodniu miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
         </p> 
         <div class="flex flex-row justify-center w-full">
             {#each socialMedia as media}
