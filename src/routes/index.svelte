@@ -2,11 +2,11 @@
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 
     const organisators = [
-			{
-				logo: '/partners/partner_sopot.svg',
-				link: 'https://www.sopot.pl/',
-				title: 'Sopot miasto'
-			},
+			// {
+			// 	logo: '/partners/partner_sopot.svg',
+			// 	link: 'https://www.sopot.pl/',
+			// 	title: 'Sopot miasto'
+			// },
             {
 				logo: '/partners/partner_44_cubes.svg',
 				link: '',
@@ -35,15 +35,7 @@ const sponsors = [
 
 
 const honorsList = [
-    {
-        img: '/honors/honors_first.svg',
-        title: '1 miejsce',
-        awards: [
-            'Medal pamiątkowa',
-            'Dyplom',
-            'Herbata terapeutyczna',
-        ]
-    },
+
     {
         img: '/honors/honors_second.svg',
         title: '2 miejsce',
@@ -52,6 +44,16 @@ const honorsList = [
             'Dyplom',
             'Herbata terapeutyczna',
         ]
+    },
+    {
+        img: '/honors/honors_first.svg',
+        title: '1 miejsce',
+        awards: [
+            'Medal pamiątkowa',
+            'Dyplom',
+            'Przedmiot dla domu wydrukowany w 3D',
+        ],
+        hackerspace: true
     },
     {
         img: '/honors/honors_third.svg',
@@ -77,11 +79,11 @@ const socialMedia = [
         img: './social/facebook.svg',
         title: ''
     },
-    {
-        link: '',
-        img: './social/instagram.svg',
-        title: ''
-    },
+    // {
+    //     link: '',
+    //     img: './social/instagram.svg',
+    //     title: ''
+    // },
     {
         link: '',
         img: './social/telegram.svg',
@@ -95,7 +97,7 @@ const socialMedia = [
 ];
 
 
-let openNav = false;
+let contact = false;
 </script>
 
 
@@ -140,7 +142,12 @@ let openNav = false;
 
 <a id="about"></a>
 <section class="w-full h-auto lg:pb-12 md:pb-12 pb-12 flex justify-center">
-    <div class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
+    <div data-aos="fade-up"
+		data-aos-delay="100"
+		data-aos-duration="1000" 
+		data-aos-once="false"
+		data-aos-mirror="true"  
+        class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
             Comiesięczny turniej "Żółty słoń"
         </h2>
@@ -190,25 +197,56 @@ let openNav = false;
         {#each organisators as organisator}
             <a href={organisator.link} target="_blank"> 
                 <div
-                    class="hover:border-light hover:border-4 rounded-lg m-1"
+                    class="hover:border-light hover:border-4 rounded-lg m-1 "
                     style="background-image: url({organisator.logo}); width: 220px; height: 110px;"
                 />
             </a>
         {/each}
     </div>
 
+<div class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center">
+  {#if !contact}
+  <h5 class="mb-2 text-3xl font-impact text-gray-900 dark:text-white">
+        Chciałbyś być jednym z organizatorów lub sponsorów?
+  </h5> 
+  <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+    
+    <button type="button" on:click={() => contact = !contact} class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-gray-100 bg-dark focus:ring-yellow-300 rounded-lg">
+        Dla organizatorów
+    </button>
+    <button type="button" on:click={() => contact = !contact} class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-gray-100 bg-dark focus:ring-yellow-300 rounded-lg">
+        Dla sponsorów
+    </button>
+
+  
+  </div>
+      {:else}
+        <div class="bg-dark bg-dark pt-4 pb-4 pr-4 pl-4 rounded-lg max-w-2xl flex flex-col items-center">
+
+        <!-- <div class="h-auto rounded-lg max-w-sm  > -->
+            <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
+                Należy skontaktować się z koordynatorem projektu
+            </h2>
+            <div class="flex flex-row justify-center w-full m-6">
+                    <a href="https://www.facebook.com/hulio.mondre">
+                        <img alt="facebook_profile" src="./social/facebook.svg" 
+                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
+                    </a>
+                    <a href="https://www.linkedin.com/in/oleg-darkdev">
+                        <img alt="linkedin_profile" src="./social/linkedin.svg" 
+                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
+                    </a>
+            </div>
+        </div>
+    {/if}
+</div>
+
 
     <div class="flex flex-col flex-wrap w-full items-center">
-        <p class="text-white text-4xl m-1 font-impact max-w-2xl text-center">
-            Chciałbyś być jednym z organizatorów lub sponsorów? wspieraj projekt
+        <p class="text-white text-4xl m-1 max-w-2xl text-center">
         </p>
         <div class="flex flex-row ">
-            <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
-                Dla organizatorów
-            </button>
-            <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300  rounded-lg">
-                Dla sponsorów
-            </button>
+
 
         </div>
     </div>
@@ -221,7 +259,13 @@ let openNav = false;
         Regulamin turnieju "Żółty słoń"
     </h2>
     <div class="flex flex-row flex-wrap w-full  justify-center cards-wrap">
-        <div style="background-image: url(/terms/terms_clocks.svg);" class="card-term items-end flex">
+        <div  
+        data-aos="fade-up"
+		data-aos-delay="100"
+		data-aos-duration="1000" 
+		data-aos-once="false"
+		data-aos-mirror="true" 
+        style="background-image: url(/terms/terms_clocks.svg);" class="card-term items-end flex">
             <div style="height: 200px; width: 360px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2">
                 <span class="text-8xl font-impact tracking-tight text-white text-center">
                     10 min.
@@ -231,7 +275,13 @@ let openNav = false;
                 </span> 
             </div>
         </div>
-        <div style="background-image: url(/terms/terms_ranking.svg); " class="max-w-sm card-ranking items-center flex">
+        <div 
+         data-aos="fade-down"
+		data-aos-delay="100"
+		data-aos-duration="1000" 
+		data-aos-once="false"
+		data-aos-mirror="true" 
+        style="background-image: url(/terms/terms_ranking.svg); " class="max-w-sm card-ranking items-center flex">
             <div style="height: 180px; width: 360px;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col lg:p-4 md:p-4 p-2 ">
 
                 <span class="text-4xl font-impact tracking-tight text-white text-center">
@@ -243,7 +293,13 @@ let openNav = false;
             </div>
         </div>
 
-        <div style="background-image: url(/terms/terms_system.svg); " class="card-term items-end flex">
+        <div 
+         data-aos="fade-up"
+		data-aos-delay="100"
+		data-aos-duration="1000" 
+		data-aos-once="false"
+		data-aos-mirror="true" 
+        style="background-image: url(/terms/terms_system.svg); " class="card-term items-end flex">
             <div style="height: 200px; width: 360px; justify-content: center; "  class="bg-dark text-light rounded-lg border border-light shadow-md flex  max-w-sm flex-col lg:p-4 md:p-4 p-2">
                 <span class="text-6xl font-impact tracking-tight text-white text-center">
                     Szwajcarski
@@ -265,8 +321,8 @@ let openNav = false;
     <div   class="flex flex-row flex-wrap flex-wrap justify-center ">
     {#each honorsList as honor}
     
-        <div style="background-image: url({honor.img});" class="card-honor m-2 -mt-20 items-end flex max-w-sm">
-            <div style="height: 200px; width: 100%;" class="bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
+        <div style="background-image: url({honor.img}); " class="card-honor m-2 -mt-10 items-end flex max-w-sm">
+            <div style="min-height: 200px; height: auto; width: 100%; " class=" bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
                 <span class="text-6xl font-impact tracking-tight text-white text-center">
                     {honor.title} 
                 </span> 
@@ -280,7 +336,14 @@ let openNav = false;
                     </li> 
                     {/each}
                 </ul>
+                {#if honor.hackerspace}
+                <span class="text-1xl mt-6 tracking-tight text-white text-center">
+                    Serdeczne podziękowania dla  <a class="inline-flex items-center hover:underline font-normal text-light underline hover:no-underline" href="https://44hackerspace.vercel.app/">44Hackerspace</a> za udostępnienie sprzętu do druku 3D.
+                </span> 
+                
+                {/if}
             </div>
+
         </div>
     {/each}
 </div>
@@ -291,10 +354,16 @@ let openNav = false;
 <a id="referee"></a>
 <section class="w-full h-auto flex justify-center bg-gray-100">
     <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center">
-        <img src="./avatar_org.png" class="w-full -mb-10" alt="Photo organisator">
+        <img 
+        data-aos="zoom-in"
+		data-aos-delay="100"
+		data-aos-duration="1000" 
+		data-aos-once="false"
+		data-aos-mirror="true" 
+        src="./avatar_org.png" class="w-full -mb-10" alt="Photo organisator">
         <div class="h-auto rounded-lg max-w-sm  bg-dark pt-8 pb-8 pr-4 pl-4">
             <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
-                Sędzia i organizator
+                Sędzia i Koordynator projektu
             </h2>
             <h3 class="w-full text-center text-light font-impact text-7xl ">
                 Oleg Medvedev
@@ -312,11 +381,11 @@ let openNav = false;
             </button>
             </div> 
             <div class="flex flex-row justify-center w-full">
-                    <a href="">
+                    <a href="https://www.facebook.com/hulio.mondre">
                         <img alt="facebook_profile" src="./social/facebook.svg" 
                         class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/oleg-darkdev">
                         <img alt="linkedin_profile" src="./social/linkedin.svg" 
                         class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
                     </a>
