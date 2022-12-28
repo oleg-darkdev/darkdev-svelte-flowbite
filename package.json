@@ -1,14 +1,14 @@
 {
 	"name": "yellow-elephant",
-	"version": "0.0.1",
+	"version": "1.0.1",
 	"description": "Official site for the chess tournament in Sopot",
 	"author": {
 		"name": "Oleg Medvedev",
-		"email": "44hackerspace@gmail.com",
-		"url": "https://linktr.ee/44hackerspace"
+		"email": "yellow_elephant.pl@outlook.com",
+		"url": "https://yellow-elephant.vercel.app/"
 	},
 	"bugs": "",
-	"homepage": "",
+	"homepage": "https://yellow-elephant.vercel.app/",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev --host --port 3000",
@@ -62,5 +62,8 @@
 	"repository": {
 		"type": "git",
 		"url": ""
+	},
+	"dependencies": {
+		"aos": "^2.3.4"
 	}
 }
