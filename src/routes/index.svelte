@@ -1,5 +1,8 @@
 <script>
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+    import Timer from '../components/Timer.svelte';
+    import Organisator from '../components/Organisator.svelte';
+    import Awards from '../components/Awards.svelte';
+    import BecomeOrganisator from '../components/BecomeOrganisator.svelte';
 
     const organisators = [
 			// {
@@ -34,44 +37,7 @@ const sponsors = [
 		];
 
 
-const honorsList = [
 
-    {
-        img: '/honors/honors_second.svg',
-        title: '2 miejsce',
-        awards: [
-            'Medal pamiątkowa',
-            'Dyplom',
-            'Herbata terapeutyczna',
-        ]
-    },
-    {
-        img: '/honors/honors_first.svg',
-        title: '1 miejsce',
-        awards: [
-            'Medal pamiątkowa',
-            'Dyplom',
-            'Przedmiot dla domu wydrukowany w 3D',
-        ],
-        hackerspace: true
-    },
-    {
-        img: '/honors/honors_third.svg',
-        title: '3 miejsce',
-        awards: [
-            'Medal pamiątkowa',
-            'Dyplom',
-            'Herbata terapeutyczna',
-        ]
-    },
-];
-
-
-const organisatoValues = [
-    'Kandydat na mistrza sportu',
-    'Mistrz Białorusi 2005-2006 r.',
-    'Wielokrotny mistrz międzynarodowych turniejów szachowych. ',
-];
 
 const socialMedia = [
     {
@@ -97,7 +63,8 @@ const socialMedia = [
 ];
 
 
-let contact = false;
+
+
 </script>
 
 
@@ -121,7 +88,7 @@ let contact = false;
                 </a>
             </li> 
             <li>
-                <a href="#prizes" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
+                <a href="#awards" class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  ">
                     Nagrody
                 </a>
             </li> 
@@ -132,7 +99,6 @@ let contact = false;
             </li>             
         </ul>
     </div> 
-
 
     <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact xl:text-6xl lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
         Comiesięczny turniej szachówy "Żółty słoń"
@@ -175,8 +141,13 @@ let contact = false;
     </div>
 </section>
 
+
+
 <a id=""></a>
 <section class="partners bg-dark w-full pt-12 pb-12 flex flex-col items-center">
+    <Timer/>
+
+
     <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Sponsorzy
     </h2>
@@ -204,50 +175,16 @@ let contact = false;
         {/each}
     </div>
 
-<div class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center">
-  {#if !contact}
-  <h5 class="mb-2 text-3xl font-impact text-gray-900 dark:text-white">
-        Chciałbyś być jednym z organizatorów lub sponsorów?
-  </h5> 
-  <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-    
-    <button type="button" on:click={() => contact = !contact} class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-gray-100 bg-dark focus:ring-yellow-300 rounded-lg">
-        Dla organizatorów
-    </button>
-    <button type="button" on:click={() => contact = !contact} class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-gray-100 bg-dark focus:ring-yellow-300 rounded-lg">
-        Dla sponsorów
-    </button>
+    <div class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center">
+        <BecomeOrganisator />
 
-  
-  </div>
-      {:else}
-        <div class="bg-dark bg-dark pt-4 pb-4 pr-4 pl-4 rounded-lg max-w-2xl flex flex-col items-center">
+        <div class="flex flex-col flex-wrap w-full items-center">
+            <p class="text-white text-4xl m-1 max-w-2xl text-center">
+            </p>
+            <div class="flex flex-row ">
 
-        <!-- <div class="h-auto rounded-lg max-w-sm  > -->
-            <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
-                Należy skontaktować się z koordynatorem projektu
-            </h2>
-            <div class="flex flex-row justify-center w-full m-6">
-                    <a href="https://www.facebook.com/hulio.mondre">
-                        <img alt="facebook_profile" src="./social/facebook.svg" 
-                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
-                    </a>
-                    <a href="https://www.linkedin.com/in/oleg-darkdev">
-                        <img alt="linkedin_profile" src="./social/linkedin.svg" 
-                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
-                    </a>
+
             </div>
-        </div>
-    {/if}
-</div>
-
-
-    <div class="flex flex-col flex-wrap w-full items-center">
-        <p class="text-white text-4xl m-1 max-w-2xl text-center">
-        </p>
-        <div class="flex flex-row ">
-
-
         </div>
     </div>
 </section>
@@ -313,85 +250,16 @@ let contact = false;
     </div>
 </section>
 
-<a id="prizes"></a>
+<a id="awards"></a>
 <section class="w-full pt-12 pb-12 h-auto flex flex-col items-center bg-dark">
-    <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
-        Nagrody turnieju "Żółty słoń"
-    </h2>
-    <div   class="flex flex-row flex-wrap flex-wrap justify-center ">
-    {#each honorsList as honor}
-    
-        <div style="background-image: url({honor.img}); " class="card-honor m-2 -mt-10 items-end flex max-w-sm">
-            <div style="min-height: 200px; height: auto; width: 100%; " class=" bg-dark text-light rounded-lg border border-light shadow-md flex max-w-sm flex-col p-4 sm:p-6">
-                <span class="text-6xl font-impact tracking-tight text-white text-center">
-                    {honor.title} 
-                </span> 
-                <!-- <span class="text-4xl font-impact tracking-tight text-white text-center">
-                    na jednego gracza
-                </span>  -->
-                <ul class="text-light  max-w-md list-disc list-inside space-y-1">
-                    {#each honor.awards as award}
-                    <li class="">
-                        {award}
-                    </li> 
-                    {/each}
-                </ul>
-                {#if honor.hackerspace}
-                <span class="text-1xl mt-6 tracking-tight text-white text-center">
-                    Serdeczne podziękowania dla  <a class="inline-flex items-center hover:underline font-normal text-light underline hover:no-underline" href="https://44hackerspace.vercel.app/">44Hackerspace</a> za udostępnienie sprzętu do druku 3D.
-                </span> 
-                
-                {/if}
-            </div>
-
-        </div>
-    {/each}
-</div>
+    <Awards />
 </section>
 
 
  
 <a id="referee"></a>
 <section class="w-full h-auto flex justify-center bg-gray-100">
-    <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center">
-        <img 
-        data-aos="zoom-in"
-		data-aos-delay="100"
-		data-aos-duration="1000" 
-		data-aos-once="false"
-		data-aos-mirror="true" 
-        src="./avatar_org.png" class="w-full -mb-10" alt="Photo organisator">
-        <div class="h-auto rounded-lg max-w-sm  bg-dark pt-8 pb-8 pr-4 pl-4">
-            <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl ">
-                Sędzia i Koordynator projektu
-            </h2>
-            <h3 class="w-full text-center text-light font-impact text-7xl ">
-                Oleg Medvedev
-            </h3>
-            <ul class="text-light pl-10 max-w-md list-disc list-inside space-y-1">
-                {#each organisatoValues as value}
-                    <li class="">
-                        {value}
-                    </li> 
-                {/each}
-            </ul>
-            <div class="mb-4 flex justify-center">
-            <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
-                Wszystkie dane
-            </button>
-            </div> 
-            <div class="flex flex-row justify-center w-full">
-                    <a href="https://www.facebook.com/hulio.mondre">
-                        <img alt="facebook_profile" src="./social/facebook.svg" 
-                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
-                    </a>
-                    <a href="https://www.linkedin.com/in/oleg-darkdev">
-                        <img alt="linkedin_profile" src="./social/linkedin.svg" 
-                        class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
-                    </a>
-            </div>
-        </div>
-    </div>
+    <Organisator />
 </section>
 
 
@@ -451,12 +319,5 @@ let contact = false;
         background-repeat: no-repeat;        
         background-position: center;
         background-size: cover;
-    }
-
-    .card-honor {
-        height: 640px;
-        background-repeat: no-repeat;        
-        background-position: center;
-        background-size: contain;
     }
 </style>
