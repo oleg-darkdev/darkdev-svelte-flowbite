@@ -41,9 +41,9 @@ const sponsors = [
 
 const socialMedia = [
     {
-        link: '',
+        link: 'https://www.facebook.com/people/Turniej-szach%C3%B3wy-%C5%BB%C3%B3%C5%82ty-s%C5%82o%C5%84/100088561723881/',
         img: './social/facebook.svg',
-        title: ''
+        title: 'Facebook'
     },
     // {
     //     link: '',
@@ -51,14 +51,14 @@ const socialMedia = [
     //     title: ''
     // },
     {
-        link: '',
+        link: 'https://t.me/chess_yellow_elephant',
         img: './social/telegram.svg',
-        title: ''
+        title: 'Telegram'
     },
     {
         link: '',
         img: './social/linkedin.svg',
-        title: ''
+        title: 'Linkedin'
     }
 ];
 
@@ -101,7 +101,7 @@ const socialMedia = [
     </div> 
 
     <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact xl:text-6xl lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
-        Comiesięczny turniej szachówy "Żółty słoń"
+        Comiesięczny turniej szachówy "Żółty Słoń"
     </h1>
 </section>
 
@@ -113,24 +113,35 @@ const socialMedia = [
 		data-aos-duration="1000" 
 		data-aos-once="false"
 		data-aos-mirror="true"  
-        class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2">
+        class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2 flex flex-col items-center">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
-            Comiesięczny turniej "Żółty słoń"
+            Comiesięczny turniej szachówy "Żółty Słoń"
         </h2>
+        <div class="mb-10 text-center font-bold text-light border rounded-lg border-light max-w-sm p-2 h-auto  ">
+            <p class="text-gray-100 text-2xl mb-4 text-center">
+                Turniej odbywa się każda środa w pierwszym tygodniu miesiąca.
+            </p> 
+            <p class="text-light text-gray-100 font-regular text-3xl text-center"> 
+                Początek o <span class="text-light font-impact text-4xl">17:00</span> 
+            </p> 
+            <p class="text-light text-gray-100 text-3xl  text-center"> 
+                Koniec o <span class="text-light font-impact text-4xl">19:45</span>
+            </p> 
+        </div>
+        
         <p class="text-gray-100 text-2xl mb-4 text-center">
-            W naszym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. <span class="text-light ">Ranking graczy 1400-2000.</span>   
+            W tym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych bardziej zaawansowanych graczy. <span class="text-light ">Ranking graczy 1400-2000.</span>   
         </p>    
         <p class="text-gray-100 text-2xl mb-4 text-center">
-            Zgłoszenie rejestrowane drogą mailową <span class="inline-flex items-center hover:underline text-light underline hover:no-underline">yellow_elephant.pl@outlook.com</span>, oraz poprzez zapisy przed rozpoczęciem turnieju.
-
+            Uczestnictwo jest bezpłatne. Zgłoszenie rejestrowane drogą mailową <span class="inline-flex items-center  text-light ">yellow_elephant.pl@outlook.com</span>, oraz poprzez zapisy przed rozpoczęciem turnieju.
         </p>   
         <!-- <p class="text-gray-100 text-2xl mb-4">
             Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
         </p>     -->
-        <p class="text-gray-100 text-2xl mb-8 text-center">
-            Turniej odbywa się co miesiąc - każda środa w pierwszym tygodniu miesiąca. Ogłoszenia o terminach dostępne są w mediach socjalnych.
+        <p class="text-gray-100 text-2xl mb-4 text-center">
+            Ogłoszenia o terminach dostępne są w mediach socjalnych.
         </p> 
-        <div class="flex flex-row justify-center w-full">
+        <div class="flex flex-row justify-center w-full mb-10">
             {#each socialMedia as media}
                 <a href="{media.link}">
                     <img alt="{media.title}" src="{media.img}" 
@@ -138,16 +149,15 @@ const socialMedia = [
                 </a>
             {/each}
         </div>
+        <Timer/>
     </div>
+    
 </section>
 
 
 
 <a id=""></a>
 <section class="partners bg-dark w-full pt-12 pb-12 flex flex-col items-center">
-    <Timer/>
-
-
     <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Sponsorzy
     </h2>
