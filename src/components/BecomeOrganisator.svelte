@@ -32,5 +32,9 @@
                     class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 ">
                 </a>
         </div>
+        <p class="text-gray-100 text-2xl mb-4 text-center">
+            lub za pomocą poczty elektronicznej  <span class="inline-flex items-center  text-light  hover:no-underline">yellow_elephant.pl@outlook.com</span> 
+        </p>
+        
     </div>
 {/if}
