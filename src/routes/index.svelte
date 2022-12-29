@@ -41,7 +41,7 @@ const sponsors = [
 
 const socialMedia = [
     {
-        link: 'https://www.facebook.com/people/Turniej-szach%C3%B3wy-%C5%BB%C3%B3%C5%82ty-s%C5%82o%C5%84/100088561723881/',
+        link: 'https://www.facebook.com/yellow.elephant.tournament/',
         img: './social/facebook.svg',
         title: 'Facebook'
     },
