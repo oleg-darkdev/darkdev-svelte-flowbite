@@ -1,4 +1,4 @@
-<div class="mb-10 text-center font-impact text-light border rounded-lg border-light max-w-2xl p-4 h-auto">
+<div class="text-center font-impact text-light border rounded-lg border-light max-w-2xl p-4 h-auto">
     <h2 class="w-full text-center text-light font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Następny turniej odbędzie się za
     </h2>
