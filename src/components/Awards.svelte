@@ -56,12 +56,12 @@ const honorsList = [
                     </li> 
                     {/each}
                 </ul>
-                {#if honor.hackerspace}
+                <!-- {#if honor.hackerspace}
                 <span class="text-1xl mt-6 tracking-tight text-white text-center">
                     Serdeczne podziękowania dla  <a class="inline-flex items-center hover:underline font-normal text-light underline hover:no-underline" href="https://44hackerspace.vercel.app/">44Hackerspace</a> za udostępnienie sprzętu do druku 3D.
                 </span> 
                 
-                {/if}
+                {/if} -->
             </div>
 
         </div>
