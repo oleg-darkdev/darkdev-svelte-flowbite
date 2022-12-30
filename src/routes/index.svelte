@@ -101,7 +101,7 @@ const socialMedia = [
     </div> 
 
     <h1 class=" lg:pt-10 md:pt-10 pt-2 text-center text-white font-impact xl:text-6xl lg:text-6xl md:text-5xl text-3xl lg:max-w-2xl lg:w-8/12 w-10/12">
-        Comiesięczny turniej szachówy "Żółty Słoń"
+        Comiesięczny turniej szachowy "Żółty Słoń"
     </h1>
 </section>
 
@@ -115,7 +115,7 @@ const socialMedia = [
 		data-aos-mirror="true"  
         class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2 flex flex-col items-center">
         <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
-            Comiesięczny turniej szachówy "Żółty Słoń"
+            Comiesięczny turniej szachowy "Żółty Słoń"
         </h2>
         <div class="mb-10 text-center font-bold text-light border rounded-lg border-light max-w-sm p-2 h-auto  ">
             <p class="text-gray-100 text-2xl mb-4 text-center">
