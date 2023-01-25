@@ -6,6 +6,7 @@
     ];
 </script>
 
+
 <div class="bg-gray-100 max-w-2xl pt-12 pb-12 flex flex-col items-center">
     <img 
     data-aos="zoom-in"
@@ -29,9 +30,9 @@
             {/each}
         </ul>
         <div class="mb-4 flex justify-center">
-        <button type="button" class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
+        <a href='/oleg-medvedev' class="m-2 group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-light hover:text-dark border border-light hover:bg-yellow-300 focus:ring-yellow-300 rounded-lg">
             Wszystkie dane
-        </button>
+        </a>
         </div> 
         <div class="flex flex-row justify-center w-full">
                 <a href="https://www.facebook.com/hulio.mondre">
