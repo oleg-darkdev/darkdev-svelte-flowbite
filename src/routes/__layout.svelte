@@ -56,6 +56,23 @@ async function startTimer() {
 <slot />
 
 <style>
+    :global(.card-term) {
+        height: 440px;
+        background-repeat: no-repeat;        
+        background-position: top;
+    }
+
+    :global(.cards-wrap) {
+        justify-content: space-around;
+    }
+
+    :global(.card-ranking) {
+        height: 440px;
+        background-repeat: no-repeat;        
+        background-position: center;
+        background-size: cover;
+    }
+
   :global(.font-impact) {
           font-family: 'Impact';
             line-height: 1.2;
