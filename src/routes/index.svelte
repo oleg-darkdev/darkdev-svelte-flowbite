@@ -73,7 +73,7 @@ const socialMedia = [
 </svelte:head>
 
 
-
+<main class="bg-light">
 <section class="banner w-full pb-12 flex flex-col items-center">
   <div class="lg:mt-10 lg:bg-transparent  md:bg-transparent  bg-white w-full flex justify-center" >
         <ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
@@ -156,7 +156,7 @@ const socialMedia = [
 
 
 
-<a id=""></a>
+<a name="sponsors"></a>
 <section class="partners bg-dark w-full pt-12 pb-12 flex flex-col items-center">
     <h2 class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
         Sponsorzy
@@ -280,6 +280,9 @@ const socialMedia = [
 <section class="w-full pt-12 pb-12 h-auto">
 
 </section> -->
+</main>
+
+
 
 <style>
     .banner {
@@ -314,20 +317,5 @@ const socialMedia = [
         height: auto;
     }
 
-    .card-term {
-        height: 440px;
-        background-repeat: no-repeat;        
-        background-position: top;
-    }
-
-    .cards-wrap {
-        justify-content: space-around;
-    }
-
-    .card-ranking {
-        height: 440px;
-        background-repeat: no-repeat;        
-        background-position: center;
-        background-size: cover;
-    }
+ 
 </style>
