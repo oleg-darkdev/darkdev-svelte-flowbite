@@ -54,7 +54,7 @@
 				</li>
 				<li class="mb-4">
 					<a href="https://44games.vercel.app/" class="hover:underline; hover:text-light" target="_blank"
-						>DarkDev.Games</a
+						>Edukacyjne gry planszowe </a
 					>
 				</li>
 			</ul>
