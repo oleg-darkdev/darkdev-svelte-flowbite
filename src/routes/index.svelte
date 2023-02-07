@@ -1,10 +1,86 @@
 <script>
-	import Timer from '../components/Timer.svelte';
-	import Organisator from '../components/Organisator.svelte';
-	import Awards from '../components/Awards.svelte';
-	import BecomeOrganisator from '../components/BecomeOrganisator.svelte';
+	import Timer from '../components/tournaments/Timer.svelte';
+	import Organisator from '../components/tournaments/Organisator.svelte';
+	import Awards from '../components/tournaments/Awards.svelte';
+	import BecomeOrganisator from '../components/tournaments/BecomeOrganisator.svelte';
 	import { onMount } from 'svelte';
-    
+	import Footer from '../components/Footer.svelte';
+	import ListTournaments from '../components/tournaments/ListTournaments.svelte';
+	import tournamentData from '../data/chessTurnamentsList';
+
+	let firstColumnData = [
+		'Turniej warcabowy: Żółty Pionek',
+		[
+			{
+				title: 'O turnieju',
+				link: 'https://yellow-elephant.vercel.app/checkers#about'
+			},
+			{
+				title: 'Regulamin',
+				link: 'https://yellow-elephant.vercel.app/checkers#terms'
+			},
+			{
+				title: 'Nagrody',
+				link: 'https://yellow-elephant.vercel.app/checkers#awards'
+			},
+			{
+				title: 'Sędzia',
+				link: 'https://yellow-elephant.vercel.app/checkers#referee'
+			},
+			{
+				title: 'Historia',
+				link: 'https://yellow-elephant.vercel.app/checkers#hronology'
+			}
+		]
+	];
+
+	let secondColumnData = [
+		'Lorem',
+		[
+			{
+				title: 'Lorem',
+				link: ''
+			},
+			{
+				title: 'Lorem',
+				link: ''
+			},
+			{
+				title: 'Lorem',
+				link: ''
+			},
+			{
+				title: 'Lorem',
+				link: ''
+			},
+			{
+				title: 'Lorem',
+				link: ''
+			},
+			{
+				title: 'Lorem',
+				link: ''
+			},
+		]
+	];
+	let thirdColumnData = [
+		'Kontakt',
+		[
+			{
+				title: 'Facebook',
+				link: 'https://www.facebook.com/hulio.mondre'
+			},
+			{
+				title: 'LinkedIn',
+				link: 'https://www.linkedin.com/in/oleg-darkdev?original_referer=https%3A%2F%2Flinktr.ee%2F'
+			},
+			{
+				title: 'Email',
+				link: 'mailto:oleg@darkdev.games'
+			}
+		]
+	];
+
 	const organisators = [
 		// {
 		// 	logo: '/partners/partner_sopot.svg',
@@ -345,13 +421,24 @@
 		<Organisator />
 	</section>
 
-	<!-- <section class="w-full pt-12 pb-12 h-auto">
+	<section id="hronology" class="w-full flex flex-col items-center pt-12 pb-12 h-auto">
+		<div
+			class="mb-4 max-w-2xl  bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4"
+		>
+			<h2 class="text-4xl text-center mb-2 font-impact text-dark ">
+				Historia turnieju szachowego "Żółty Słoń
+			</h2>
+			<ListTournaments {tournamentData} />
+		</div>
+	</section>
 
-</section>
+	<!-- 
 <section class="w-full pt-12 pb-12 h-auto">
 
 </section> -->
 </main>
+
+<Footer {firstColumnData} {secondColumnData} {thirdColumnData} />
 
 <style>
 	.banner {
