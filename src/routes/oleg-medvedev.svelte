@@ -1,6 +1,72 @@
 <script>
 	import Footer from '../components/Footer.svelte';
 	import Timeline from '../components/Timeline.svelte';
+	import ImageGallery from '../components/ImageGallery.svelte';
+
+	let firstColumnData = [
+		'Mój profil IT',
+		[
+			{
+				title: 'Github',
+				link: 'https://github.com/oleg-darkdev/'
+			},
+			{
+				title: 'LinkedIn',
+				link: 'https://www.linkedin.com/in/oleg-darkdev?original_referer=https%3A%2F%2Flinktr.ee%2F'
+			},
+			{
+				title: 'Resume',
+				link: 'https://darkdev.vercel.app/'
+			}
+		]
+	];
+
+	let secondColumnData = [
+		'Moje projekty społeczne',
+		[
+			{
+				title: 'Turniej szachowy: Żółty Słoń',
+				link: 'https://yellow-elephant.vercel.app/chess'
+			},
+			{
+				title: 'Turniej warcabowy: Żółty Pionek',
+				link: 'https://yellow-elephant.vercel.app/checkers'
+			},
+			{
+				title: 'IT wsparcie dla wspierających',
+				link: 'https://itingo.vercel.app/'
+			},
+			{
+				title: '44FabLab w Sopocie',
+				link: 'https://44fablab.vercel.app/'
+			},
+			{
+				title: 'Edukacyjne gry planszowe',
+				link: 'https://44games.vercel.app/'
+			},
+			{
+				title: '',
+				link: ''
+			}
+		]
+	];
+	let thirdColumnData = [
+		'Kontakt',
+		[
+			{
+				title: 'Facebook',
+				link: 'https://www.facebook.com/hulio.mondre'
+			},
+			{
+				title: 'LinkedIn',
+				link: 'https://www.linkedin.com/in/oleg-darkdev?original_referer=https%3A%2F%2Flinktr.ee%2F'
+			},
+			{
+				title: 'Email',
+				link: 'mailto:oleg@darkdev.games'
+			}
+		]
+	];
 </script>
 
 <svelte:head>
@@ -243,12 +309,10 @@
 		</div>
 	</section>
 
-	<section
-		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
-	/>
+	<ImageGallery />
 </main>
 
-<Footer />
+<Footer {firstColumnData} {secondColumnData} {thirdColumnData} />
 
 <style>
 	@media (max-width: 480px) {
