@@ -1,5 +1,5 @@
 <script>
-	import timelineMyTournaments from '../data/timelineMyTournaments';
+	import timelineMyTournaments from '../../data/timelineMyTournaments';
 
 	let shortTimelineMyTournaments = timelineMyTournaments.slice(10, 12);
 	let tournamentList = shortTimelineMyTournaments;
@@ -20,7 +20,7 @@
 				<img class="rounded-t-lg" src={tournament.img} alt={tournament.title} />
 			{/if}
 			<div class="p-4 sm:p-6">
-				<h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+				<h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
 					{tournament.title}
 				</h3>
 				<p class="mb-3 font-normal text-gray-700 leading-tight">
@@ -42,9 +42,7 @@
 		on:click={() => (tournamentList = timelineMyTournaments)}
 		class="bg-dark rounded-lg border border-gray-200 font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center shadow-md flex max-w-2xl  flex-col text-white hover:bg-gray-700 focus:bg-gray-300 rounded-lg p-4 sm:p-6"
 	>
-		<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-			Wyświetl pełną listę
-		</h5>
+		<h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Wyświetl pełną listę</h5>
 	</button>
 {/if}
 

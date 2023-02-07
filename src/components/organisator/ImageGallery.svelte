@@ -1,6 +1,13 @@
 <section
-	class=" w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
+	class=" w-full flex justify-center items-center flex-col lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
 >
+	<h2 id="in-papers" class="w-full text-dark text-center font-impact text-5xl max-w-3xl ">
+		Moja gra z Borysem Spasskim, dziesiątym mistrzem świata w szachach.
+	</h2>
+	<p class="mb-3 font-normal text-gray-700 max-w-xl text-center leading-tight">
+		To moja gra trafiła do gazet i do telewizji - bo prawie zakończyłem ją remisem, ale z braku
+		czasu popełniłem błąd na samym końcu.
+	</p>
 	<div class="flex flex-row m-1 flex-wrap justify-center">
 		<div class="flex flex-col w-6/12 -mr-60 ">
 			<div class="flex flex-row flex-wrap">
@@ -27,9 +34,8 @@
 					<img src="/organisator/papers/2.png" alt="Project" />
 				</div>
 			</div>
-			
 		</div>
-        
+
 		<div class="wi m-1  to/3  m-1">
 			<div class="c i pg sg z-1">
 				<img src="/organisator/papers/3.png" alt="Project" />
