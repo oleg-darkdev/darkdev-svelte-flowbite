@@ -1,5 +1,7 @@
 <script>
-    import Footer from "../components/Footer.svelte";
+	import Footer from '../components/Footer.svelte';
+	import Timeline from '../components/Timeline.svelte';
+
 </script>
 
 <svelte:head>
@@ -199,21 +201,20 @@
 		</div>
 	</section>
 
+	<section class="w-full flex justify-center lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12">
+		<div class="w-8/12 bg-light flex items-center flex-col p-8 rounded-xl">
+			<Timeline />
+		</div>
+	</section>
 
 	<section
 		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
 	>
-
-    </section>
-
-	<section
-		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
-	>
-
+		
     </section>
 </main>
 
-<Footer/>
+<Footer />
 
 <style>
 	@media (max-width: 480px) {
