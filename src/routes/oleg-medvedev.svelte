@@ -1,12 +1,43 @@
 <script>
 	import Footer from '../components/Footer.svelte';
 	import Timeline from '../components/Timeline.svelte';
-
 </script>
 
 <svelte:head>
 	<title>Oleg Medvedev</title>
 </svelte:head>
+
+<header class="w-full bg-light   pb-12 flex flex-col items-center">
+	<div class="lg:mt-10 lg:bg-transparent  md:bg-transparent   w-full flex justify-center">
+		<ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
+			<li>
+				<a
+					href="#about"
+					class="lg:text-3xl text-1xl block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+				>
+					Kim jestem
+				</a>
+			</li>
+			<li>
+				<a
+					href="#my-awards"
+					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+				>
+					Moja historia zwycięstw
+				</a>
+			</li>
+
+			<li>
+				<a
+					href="#contact"
+					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+				>
+					Kontact
+				</a>
+			</li>
+		</ul>
+	</div>
+</header>
 
 <main class="bg-gray-100">
 	<div class="flex justify-start w-full lg:p-10 md:p-10">
@@ -20,6 +51,7 @@
 	<section class="w-full h-auto flex flex-col justify-center mb-10  ">
 		<div class="flex w-full flex-row flex-wrap-reverse justify-center">
 			<div
+				id="about"
 				class="flex flex-col lg:w-4/12 md:w-4/12 w-full bg-light lg:p-6 md:p-6 p-4 rounded-lg items-center cards-wrap z-10"
 			>
 				<div class="mb-6">
@@ -157,7 +189,7 @@
 			style=""
 			class="contact flex lg:w-8/12 md:w-10/12 w-full flex-col bg-light rounded-lg lg:p-8 md:p-8 p-4 z-0"
 		>
-			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Kontakt</h2>
+			<h2 id="contact" class="w-full text-dark font-impact text-7xl max-w-3xl ">Kontakt</h2>
 			<p class="text-dark text-4xl m-1 max-w-4xl">
 				Zapraszam na indywidualne i grupowe zajęcia szachowe.
 			</p>
@@ -177,11 +209,11 @@
 						class="rounded-full w-40 h-40 m-1  "
 					/>
 				</a> -->
-				<a href="https://www.facebook.com/hulio.mondre">
+				<a href="https://www.linkedin.com/in/oleg-darkdev">
 					<img
 						alt="linkedin_profile"
 						src="./social/org_contact_linkedin.svg"
-						class="rounded-full w-40 h-40 m-1  "
+						class="rounded-full w-40 h-40 m-1"
 					/>
 				</a>
 			</div>
@@ -201,17 +233,19 @@
 		</div>
 	</section>
 
-	<section class="w-full flex justify-center lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12">
+	<section
+		id="my-awards"
+		class="w-full flex justify-center lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
+	>
 		<div class="w-8/12 bg-light flex items-center flex-col p-8 rounded-xl">
+			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Moja historia zwycięstw</h2>
 			<Timeline />
 		</div>
 	</section>
 
 	<section
 		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
-	>
-		
-    </section>
+	/>
 </main>
 
 <Footer />
@@ -233,7 +267,7 @@
 	}
 	@media (min-width: 480px) {
 		h1 {
-			margin-left: 18%;
+			margin-left: 8%;
 		}
 		.photo-wrap {
 			height: 130vh;
