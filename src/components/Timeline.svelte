@@ -379,6 +379,7 @@
 
 </script>
 
+
 {#each awardsList as award (award.id)}
 	<div class="timeline">
 		<div
