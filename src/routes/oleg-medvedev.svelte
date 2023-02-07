@@ -1,7 +1,7 @@
 <script>
 	import Footer from '../components/Footer.svelte';
-	import Timeline from '../components/Timeline.svelte';
-	import ImageGallery from '../components/ImageGallery.svelte';
+	import Timeline from '../components/organisator/Timeline.svelte';
+	import ImageGallery from '../components/organisator/ImageGallery.svelte';
 
 	let firstColumnData = [
 		'Mój profil IT',
@@ -89,7 +89,15 @@
 					href="#my-awards"
 					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
-					Moja historia zwycięstw
+					Historia zwycięstw
+				</a>
+			</li>
+			<li>
+				<a
+					href="#in-papers"
+					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+				>
+					W prasie
 				</a>
 			</li>
 
@@ -249,7 +257,7 @@
 	</section>
 
 	<section
-		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
+		class="w-full flex justify-center items-center flex-row flex-wrap lg:pt-12 md:pt-12 pt-4 "
 	>
 		<div
 			style=""
@@ -292,24 +300,21 @@
 				data-aos-duration="1000"
 				data-aos-once="false"
 				data-aos-mirror="true"
-				src="./organisator/avatar_dream.png"
+				src="./organisator/avatar_speak.png"
 				class="photo-card"
 				alt="Photo organisator"
 			/>
 		</div>
 	</section>
 
-	<section
-		id="my-awards"
-		class="w-full flex justify-center lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
-	>
+	<ImageGallery />
+
+	<section id="my-awards" class="w-full flex justify-center  md:pt-12 pt-4 md:pb-12 lg:pb-12">
 		<div class="w-8/12 bg-light flex items-center flex-col p-8 rounded-xl">
 			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Moja historia zwycięstw</h2>
 			<Timeline />
 		</div>
 	</section>
-
-	<ImageGallery />
 </main>
 
 <Footer {firstColumnData} {secondColumnData} {thirdColumnData} />
