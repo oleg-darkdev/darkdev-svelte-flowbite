@@ -396,7 +396,6 @@
 			<div class="p-4 sm:p-6">
 				<h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 					{award.title}
-					{award.id}
 				</h3>
 				<p class="mb-3 font-normal text-gray-700 leading-tight">
 					{award.description}
