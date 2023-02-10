@@ -11,6 +11,38 @@
 <slot />
 
 <style>
+	:global(.banner) {
+		background-image: url(/banner.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@media (min-width: 1024px) {
+		:global(.banner) {
+			height: 800px;
+			background-size: contain;
+		}
+	}
+
+	@media (min-width: 760px) and (max-width: 1024px) {
+		:global(.banner) {
+			height: 70vh;
+			background-size: cover;
+		}
+	}
+
+	@media (max-width: 760px) {
+		:global(.banner) {
+			height: 50vh;
+			background-size: cover;
+		}
+	}
+
+	:global(.partners) {
+		min-height: 400px;
+		height: auto;
+	}
+
 	:global(.card-term) {
 		height: 440px;
 		background-repeat: no-repeat;
