@@ -310,7 +310,7 @@
 	<ImageGallery />
 
 	<section id="my-awards" class="w-full flex justify-center  md:pt-12 pt-4 md:pb-12 lg:pb-12">
-		<div class="w-8/12 bg-light flex items-center flex-col p-8 rounded-xl">
+		<div class="lg:w-8/12 md:w-8/12 w-full bg-light flex items-center flex-col p-8 rounded-xl">
 			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Moja historia zwycięstw</h2>
 			<Timeline />
 		</div>
