@@ -73,38 +73,38 @@
 	<title>Oleg Medvedev</title>
 </svelte:head>
 
-<header class="w-full bg-light   pb-4  flex flex-col items-center">
+<header class="w-full bg-light p-2   pb-4  flex flex-col items-center">
 	<div class="lg:mt-10 lg:bg-transparent  md:bg-transparent   w-full flex justify-center">
 		<ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
 			<li>
 				<a
 					href="#about"
-					class="lg:text-3xl text-2xl text-center block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center block py-2  rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Kim jestem
+				</a>
+			</li>
+
+			<li>
+				<a
+					href="#in-media"
+					class="lg:text-3xl text-2xl text-center  block py-2  rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+				>
+					W prasie
 				</a>
 			</li>
 			<li>
 				<a
 					href="#my-awards"
-					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center  block py-2  rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Historia zwycięstw
 				</a>
 			</li>
 			<li>
 				<a
-					href="#in-media"
-					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
-				>
-					W prasie
-				</a>
-			</li>
-
-			<li>
-				<a
 					href="#contact"
-					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center  block py-2  rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Kontact
 				</a>
@@ -114,7 +114,7 @@
 </header>
 
 <main class="bg-gray-100">
-	<div class="flex justify-start w-full lg:p-10 md:p-10">
+	<div class="flex justify-start w-full lg:p-10 md:p-10 -mb-10">
 		<h1
 			class="text-center bg-light  max-w-2xl rounded-lg lg:p-10 p-6 text-dark font-impact lg:text-5xl md:text-4xl text-4xl "
 		>
@@ -122,7 +122,7 @@
 		</h1>
 	</div>
 
-	<section class="w-full h-auto flex flex-col justify-center mb-10  ">
+	<section class="w-full h-auto flex flex-col justify-center">
 		<div class="flex w-full flex-row flex-wrap-reverse justify-center">
 			<div
 				id="about"
@@ -174,7 +174,7 @@
 				</div>
 			</div>
 
-			<div class="lg:-ml-40 md:-ml-40 flex photo-wrap items-start">
+			<div class="lg:-ml-40 md:-ml-40 mb-4 flex photo-wrap items-start">
 				<img
 					data-aos="zoom-in"
 					data-aos-delay="100"
@@ -191,7 +191,7 @@
 
 	<section class="w-full h-auto flex flex-col justify-center ">
 		<div class="flex w-full flex-row flex-wrap justify-center">
-			<div class="lg:-mr-40 md:-mr-40 flex photo-wrap items-end">
+			<div class="lg:-mr-40 md:-mr-40 -mb-10 flex photo-wrap items-end">
 				<img
 					data-aos="zoom-in"
 					data-aos-delay="100"
@@ -307,11 +307,13 @@
 		</div>
 	</section>
 
-	<a name="in-media"></a>
+	<a name="in-media" />
 	<ImageGallery />
 
 	<section id="my-awards" class="w-full flex justify-center  md:pt-12 pt-4 md:pb-12 lg:pb-12">
-		<div class="lg:w-8/12 md:w-8/12 w-full bg-light flex items-center flex-col p-8 lg:rounded-xl md:rounded-xl ">
+		<div
+			class="lg:w-8/12 md:w-8/12 w-full bg-light flex items-center flex-col p-8 lg:rounded-xl md:rounded-xl "
+		>
 			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Moja historia zwycięstw</h2>
 			<Timeline />
 		</div>
