@@ -1,7 +1,7 @@
 <section
-	class=" w-full flex justify-center items-center flex-col lg:pt-12 md:pt-12 pt-4 md:pb-12 lg:pb-12"
+	class=" w-full flex justify-center items-center flex-col lg:pt-12 md:pt-12 pt-4 pb-20"
 >
-	<h2 id="in-papers" class="w-full text-dark text-center font-impact text-5xl max-w-3xl ">
+	<h2 id="in-papers" class="w-full text-dark text-center font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl ">
 		Moja gra z Borysem Spasskim, dziesiątym mistrzem świata w szachach.
 	</h2>
 	<p class="mb-3 font-normal text-gray-700 max-w-xl text-center leading-tight">

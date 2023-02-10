@@ -13,7 +13,7 @@
 			data-aos-duration="800"
 			data-aos-once="false"
 			data-aos-mirror="true"
-			class="bg-white card text-gray-500 rounded-lg border border-gray-200 shadow-md flex flex-col"
+			class="bg-white card text-gray-500 lg:rounded-lg md:rounded-lg border border-gray-200 shadow-md flex flex-col"
 		>
 			{#if tournament.showCert}
 				<img class="rounded-t-lg" src={tournament.img} alt={tournament.title} />

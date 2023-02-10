@@ -25,11 +25,11 @@
 		'Moje projekty społeczne',
 		[
 			{
-				title: 'Turniej szachowy: Żółty Słoń',
+				title: 'Turniej szachowy: <br> Żółty Słoń',
 				link: 'https://yellow-elephant.vercel.app/chess'
 			},
 			{
-				title: 'Turniej warcabowy: Żółty Pionek',
+				title: 'Turniej warcabowy: <br> Żółty Pionek',
 				link: 'https://yellow-elephant.vercel.app/checkers'
 			},
 			{
@@ -73,13 +73,13 @@
 	<title>Oleg Medvedev</title>
 </svelte:head>
 
-<header class="w-full bg-light   pb-12 flex flex-col items-center">
+<header class="w-full bg-light   pb-4  flex flex-col items-center">
 	<div class="lg:mt-10 lg:bg-transparent  md:bg-transparent   w-full flex justify-center">
 		<ul class="flex flex-row  mt-4 md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
 			<li>
 				<a
 					href="#about"
-					class="lg:text-3xl text-1xl block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Kim jestem
 				</a>
@@ -87,7 +87,7 @@
 			<li>
 				<a
 					href="#my-awards"
-					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Historia zwycięstw
 				</a>
@@ -95,7 +95,7 @@
 			<li>
 				<a
 					href="#in-media"
-					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					W prasie
 				</a>
@@ -104,7 +104,7 @@
 			<li>
 				<a
 					href="#contact"
-					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
+					class="lg:text-3xl text-2xl text-center  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					Kontact
 				</a>
@@ -126,7 +126,7 @@
 		<div class="flex w-full flex-row flex-wrap-reverse justify-center">
 			<div
 				id="about"
-				class="flex flex-col lg:w-4/12 md:w-4/12 w-full bg-light lg:p-6 md:p-6 p-4 rounded-lg items-center cards-wrap z-10"
+				class="flex flex-col lg:w-4/12 md:w-4/12 w-full bg-light lg:p-6 md:p-6 p-4 lg:rounded-lg md:rounded-lg  items-center cards-wrap z-10"
 			>
 				<div class="mb-6">
 					<p class="text-dark text-center font-impact w-full text-4xl">Cześć, nazywam się</p>
@@ -205,7 +205,7 @@
 			</div>
 
 			<div
-				class="flex flex-col lg:w-4/12 md:w-4/12 w-full bg-light lg:p-6 md:p-6 p-4 rounded-lg items-center cards-wrap z-10"
+				class="flex flex-col lg:w-4/12 md:w-4/12 w-full bg-light lg:p-6 md:p-6 p-4 lg:rounded-lg md:rounded-lg items-center cards-wrap z-10"
 			>
 				<div
 					data-aos="fade-down"
@@ -261,7 +261,7 @@
 	>
 		<div
 			style=""
-			class="contact flex lg:w-8/12 md:w-10/12 w-full flex-col bg-light rounded-lg lg:p-8 md:p-8 p-4 z-0"
+			class="contact flex lg:w-8/12 md:w-10/12 w-full flex-col bg-light rounded-lg lg:p-8 md:p-8 p-4 m-2 z-0"
 		>
 			<h2 id="contact" class="w-full text-dark font-impact text-7xl max-w-3xl ">Kontakt</h2>
 			<p class="text-dark text-4xl m-1 max-w-4xl">
@@ -311,7 +311,7 @@
 	<ImageGallery />
 
 	<section id="my-awards" class="w-full flex justify-center  md:pt-12 pt-4 md:pb-12 lg:pb-12">
-		<div class="lg:w-8/12 md:w-8/12 w-full bg-light flex items-center flex-col p-8 rounded-xl">
+		<div class="lg:w-8/12 md:w-8/12 w-full bg-light flex items-center flex-col p-8 lg:rounded-xl md:rounded-xl ">
 			<h2 class="w-full text-dark font-impact text-7xl max-w-3xl ">Moja historia zwycięstw</h2>
 			<Timeline />
 		</div>
