@@ -12,7 +12,7 @@
 				{#each firstColumnData[1] as data}
 					<li class="mb-4">
 						<a href={data.link} class="hover:underline; hover:text-light" target="_blank"
-							>{data.title}
+							>{@html data.title}
 						</a>
 					</li>
 				{/each}
@@ -24,7 +24,7 @@
 				{#each secondColumnData[1] as data}
 					<li class="mb-4">
 						<a href={data.link} class="hover:underline; hover:text-light" target="_blank"
-							>{data.title}
+							>{@html data.title}
 						</a>
 					</li>
 				{/each}
@@ -36,7 +36,7 @@
 				{#each thirdColumnData[1] as data}
 					<li class="mb-4">
 						<a href={data.link} class="hover:underline; hover:text-light" target="_blank"
-							>{data.title}
+							>{@html data.title}
 						</a>
 					</li>
 				{/each}
