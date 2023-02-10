@@ -94,7 +94,7 @@
 			</li>
 			<li>
 				<a
-					href="#in-papers"
+					href="#in-media"
 					class="lg:text-3xl text-1xl  block py-2 pr-2 pl-2 md:p-0 rounded md:border-0 font-impact text-dark hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-dark  "
 				>
 					W prasie
@@ -307,6 +307,7 @@
 		</div>
 	</section>
 
+	<a name="in-media"></a>
 	<ImageGallery />
 
 	<section id="my-awards" class="w-full flex justify-center  md:pt-12 pt-4 md:pb-12 lg:pb-12">
