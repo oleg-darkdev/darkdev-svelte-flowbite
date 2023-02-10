@@ -13,8 +13,7 @@
 			data-aos-duration="800"
 			data-aos-once="false"
 			data-aos-mirror="true"
-			style="width: 350px; position: relative; {tournament.position}: 50%;"
-			class="bg-white  card text-gray-500 rounded-lg border border-gray-200 shadow-md flex flex-col"
+			class="bg-white card text-gray-500 rounded-lg border border-gray-200 shadow-md flex flex-col"
 		>
 			{#if tournament.showCert}
 				<img class="rounded-t-lg" src={tournament.img} alt={tournament.title} />
@@ -47,9 +46,74 @@
 {/if}
 
 <style>
-	.timeline {
-		width: 350px;
-		margin: auto;
+	@media (max-width: 720px) {
+		.relative-left {
+			position: relative;
+			left: 0;
+		}
+
+		.relative-right {
+			position: relative;
+			right: 0;
+		}
+
+		.timeline {
+			width: 300px;
+			margin: auto;
+		}
+		.card {
+			width: 280px;
+		}
+		.timeline:nth-child(even) {
+			border-left: 2px dashed;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-right: 5px;
+			padding-right: 0;
+		}
+
+		.timeline:nth-child(odd) {
+			border-right: 2px dashed;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			margin-left: 5px;
+			padding-left: 0;
+		}
+	}
+
+	@media (min-width: 720px) {
+		.timeline {
+			width: 320px;
+			margin: auto;
+		}
+
+		.relative-left {
+			position: relative;
+			left: 50%;
+		}
+
+		.relative-right {
+			position: relative;
+			right: 50%;
+		}
+		.card {
+			width: 320px;
+		}
+		.timeline:nth-child(even) {
+			border-left: 2px dashed;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-right: 30px;
+			padding-right: 0;
+		}
+
+		.timeline:nth-child(odd) {
+			border-right: 2px dashed;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			margin-left: 30px;
+			padding-left: 0;
+		}
 	}
 
 	/* .card {
@@ -63,28 +127,11 @@
 		position: relative;
 		right: 20%;
 	} */
-
 	.timeline {
 		border-top: 2px dashed;
 		border-color: #12100b !important;
 		margin: 0;
 		padding: 30px;
-	}
-
-	.timeline:nth-child(even) {
-		border-left: 2px dashed;
-		border-top-left-radius: 30px;
-		border-bottom-left-radius: 30px;
-		margin-right: 30px;
-		padding-right: 0;
-	}
-
-	.timeline:nth-child(odd) {
-		border-right: 2px dashed;
-		border-top-right-radius: 30px;
-		border-bottom-right-radius: 30px;
-		margin-left: 30px;
-		padding-left: 0;
 	}
 
 	.timeline:first-child {
