@@ -9,7 +9,7 @@
 		czasu popełniłem błąd na samym końcu.
 	</p>
 	<div class="flex flex-row m-1 flex-wrap justify-center">
-		<div class="flex flex-col w-6/12 -mr-60 ">
+		<div class="flex flex-col lg:w-6/12 md:w-6/12 lg:-mr-60 md:-mr-60 ">
 			<div class="flex flex-row flex-wrap">
 				<div class="wi fb to/3 p-1">
 					<div class="c i pg sg z-1">
