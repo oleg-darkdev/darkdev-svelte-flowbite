@@ -114,7 +114,7 @@
 </header>
 
 <main class="bg-gray-100">
-	<div class="flex justify-start w-full lg:p-10 md:p-10 -mb-10">
+	<div class="flex justify-start w-full lg:p-10 md:p-10 lg:mb-0 lg:mb-0 -mb-10">
 		<h1
 			class="text-center bg-light  max-w-2xl rounded-lg lg:p-10 p-6 text-dark font-impact lg:text-5xl md:text-4xl text-4xl "
 		>
