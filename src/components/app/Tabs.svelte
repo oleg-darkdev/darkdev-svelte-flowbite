@@ -30,22 +30,22 @@
       <!-- <button type="button" on:click={() => showSettings = !showSettings} role="tab" class="inline-block text-sm font-medium text-center disabled:cursor-not-allowed p-4 text-dark dark:text-blue-500 dark:border-blue-500 active">
         Settings
       </button>  -->
-      <a href="/settings"  class="inline-block font-impact text-2xl font-medium text-center disabled:cursor-not-allowed m-2 text-dark dark:text-blue-500 dark:border-blue-500 active">
+      <a href="/app/settings"  class="inline-block font-impact text-2xl font-medium text-center disabled:cursor-not-allowed m-2 text-dark dark:text-blue-500 dark:border-blue-500 active">
             Settings
       </a>
     </li> 
     <li class="group" role="presentation">
-      <a href="/players" class="inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2  text-dark dark:text-blue-500 dark:border-blue-500 active">
+      <a href="/app/players" class="inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2  text-dark dark:text-blue-500 dark:border-blue-500 active">
             Players
       </a>
     </li> 
     <li class="group" role="presentation">
-      <a href="/rounds" class="inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2 text-dark dark:text-blue-500 dark:border-blue-500 active">
+      <a href="/app/rounds" class="inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2 text-dark dark:text-blue-500 dark:border-blue-500 active">
             Rounds
       </a> 
     </li> 
     <li class="group" role="presentation">
-      <a href="/standings" class=" inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2   text-dark dark:text-blue-500 dark:border-blue-500 active">
+      <a href="/app/standings" class=" inline-block font-impact text-2xl text-sm font-medium text-center disabled:cursor-not-allowed m-2   text-dark dark:text-blue-500 dark:border-blue-500 active">
             Standings
       </a>
     </li> 
