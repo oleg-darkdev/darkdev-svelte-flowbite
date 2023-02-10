@@ -44,7 +44,7 @@
 				<button
 					on:click={decrement}
 					type="button"
-					class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white hover:text-dark bg-dark hover:bg-light focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg !p-2"
+					class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white hover:text-dark bg-dark hover:bg-light focus:ring-blue-300    rounded-lg !p-2"
 				>
 					<svg
 						aria-hidden="true"
@@ -68,7 +68,7 @@
 				<button
 					on:click={increment}
 					type="button"
-					class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-dark hover:text-dark hover:bg-light focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg !p-2"
+					class="text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-dark hover:text-dark hover:bg-light focus:ring-blue-300    rounded-lg !p-2"
 				>
 					<svg
 						aria-hidden="true"
@@ -89,7 +89,7 @@
 		<button
 			on:click={saveTornInfo}
 			type="submit"
-			class="text-center font-medium w-5/12 focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-dark hover:text-dark hover:bg-light focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-lg !p-2"
+			class="text-center font-medium w-5/12 focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-sm text-white bg-dark hover:text-dark hover:bg-light focus:ring-blue-300    rounded-lg !p-2"
 		>
 			Zapisać turniej
 		</button>

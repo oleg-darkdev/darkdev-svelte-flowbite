@@ -21,9 +21,7 @@
 
 <Modal bind:open={showNewPlayerForm} size="xs" autoclose={true}>
 	<form class="flex flex-col space-y-6" action="#">
-		<h3 class="text-xl font-medium text-gray-900 dark:text-white p-0">
-			Rejestracja nowego użytkownika
-		</h3>
+		<h3 class="text-xl font-medium text-gray-900  p-0">Rejestracja nowego użytkownika</h3>
 
 		<div class="space-y-2">
 			<Label for="first_name" class="mb-2">Imię</Label>
@@ -55,9 +53,7 @@
 		</div>
 		<div class="flex items-start">
 			<Checkbox>Wyrażam zgodę na przekazanie danych do publicznego excelu</Checkbox>
-			<a href="/" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
-				>Excel publiczny?</a
-			>
+			<a href="/" class="ml-auto text-sm text-blue-700 hover:underline ">Excel publiczny?</a>
 		</div>
 		<!-- -->
 		<Button on:click={() => addPlayer()} type="submit" class="w-full1">Dodać użytkownika</Button>

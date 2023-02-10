@@ -4,21 +4,17 @@
 
 <a
 	href={$excelLink}
-	class="m-6 flex  md:max-w-xl max-w-sm flex-col md:flex-row  bg-white dark:bg-gray-800 shadow-md text-gray-500 dark:text-gray-400 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700"
+	class="m-6 flex  md:max-w-xl max-w-sm flex-col md:flex-row  bg-white shadow-md text-gray-500  rounded-lg border border-gray-200  hover:bg-gray-100 "
 >
 	<!-- <img class="rounded-t-lg object-cover w-full h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/images/image-1.webp" alt="">  -->
 	<div class="p-6 flex flex-col ">
 		<h4 class="font-impact font-normal text-gray-900 text-6xl leading-tight">01.02.2023 r.</h4>
-		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-			>Turniej "{$title}"</span
-		>
-		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Turniej "{$title}"</span>
+		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 "
 			>Rounds: {$roundNow} / {$rounds}</span
 		>
-		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-			>Raiting: {$raiting}</span
-		>
-		<span class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+		<span class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Raiting: {$raiting}</span>
+		<span class=" text-2xl font-bold tracking-tight text-gray-900 "
 			>Members: {$tournament.players.length}</span
 		>
 

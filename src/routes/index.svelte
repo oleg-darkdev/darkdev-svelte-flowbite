@@ -181,10 +181,10 @@
 					class="bg-light hover:bg-white text-gray-500 m-2 rounded-lg border border-gray-200  shadow-md flex max-w-sm flex-col p-4 sm:p-6"
 				>
 					<img class="w-20 h-20" src={service.img} alt={service.title} />
-					<h2 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+					<h2 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
 						{service.title}
 					</h2>
-					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+					<p class="mb-3 font-normal text-gray-700 ">
 						{service.description}
 					</p>
 				</div>
@@ -207,11 +207,11 @@
 				>
 					<img class="w-20 h-20" src={about.img} alt={about.title} />
 					<!-- <a href="/"> -->
-					<h2 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+					<h2 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
 						{about.title}
 					</h2>
 					<!-- </a> -->
-					<p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+					<p class="mb-3 font-normal text-gray-500 ">
 						{about.description}
 					</p>
 				</div>
@@ -251,9 +251,7 @@
 			{/each}
 		</div> -->
 
-		<div
-			class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center"
-		>
+		<div class="bg-light  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center">
 			<BecomeOrganisator />
 		</div>
 	</section>

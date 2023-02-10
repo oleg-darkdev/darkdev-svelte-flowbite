@@ -45,19 +45,13 @@
 
 		<TableBody class="divide-y">
 			{#each filteredItems as item, i}
-				<tr class="bg-white dark:border-gray-700  odd:bg-white even:bg-light  hover:bg-gray-100">
-					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white"
+				<tr class="bg-white   odd:bg-white even:bg-light  hover:bg-gray-100">
+					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 "
 						>{i + 1} | {item.wins + item.draws * 0.5}
 					</td>
-					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white"
-						>{item.name}
-					</td>
-					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white"
-						>{item.surname}
-					</td>
-					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white"
-						>{item.elo}
-					</td>
+					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 ">{item.name} </td>
+					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 ">{item.surname} </td>
+					<td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900 ">{item.elo} </td>
 				</tr>
 			{/each}
 		</TableBody>

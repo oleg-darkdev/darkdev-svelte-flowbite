@@ -174,7 +174,7 @@
 				</div>
 			</div>
 
-			<div class="lg:-ml-40 md:-ml-40 mb-4 flex photo-wrap items-start">
+			<div class="lg:-ml-40 md:-ml-40 mb-10 flex photo-wrap items-start">
 				<img
 					data-aos="zoom-in"
 					data-aos-delay="100"

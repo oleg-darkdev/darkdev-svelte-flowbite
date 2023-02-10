@@ -85,7 +85,6 @@
 		]
 	];
 
-
 	onMount(() => {
 		startTimer();
 	});
@@ -215,7 +214,6 @@
 					</p>
 				</div>
 
-
 				<div slot="timer">
 					<Timer />
 				</div>
@@ -256,9 +254,7 @@
 			{/each}
 		</div>
 
-		<div
-			class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center"
-		>
+		<div class="bg-light  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center">
 			<BecomeOrganisator>
 				<div slot="text">
 					<p class="text-gray-100 text-2xl mb-4 text-center">
@@ -391,5 +387,4 @@
 <Footer {firstColumnData} {secondColumnData} {thirdColumnData} />
 
 <style>
-
 </style>

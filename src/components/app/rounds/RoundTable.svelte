@@ -188,7 +188,7 @@
 		<button
 			on:click={generateNextMatch}
 			type="button"
-			class="group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300 dark:focus:ring-yellow-900 first:rounded-l-lg last:rounded-r-lg"
+			class="group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300  first:rounded-l-lg last:rounded-r-lg"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-5 h-5 mr-2 text-purple-500 dark:text-green-500"
+				class="w-5 h-5 mr-2 text-purple-500 "
 				><path
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -214,7 +214,7 @@
 		<button
 			on:click={generateFirstMatch}
 			type="button"
-			class="group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300 dark:focus:ring-yellow-900 first:rounded-l-lg last:rounded-r-lg"
+			class="group text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-6 py-3.5 text-base text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300  first:rounded-l-lg last:rounded-r-lg"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-5 h-5 mr-2 text-purple-500 dark:text-green-500"
+				class="w-5 h-5 mr-2 text-purple-500 "
 				><path
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -241,7 +241,7 @@
 				Round {$roundsHistory.length - i}
 			</h3>
 			<table class="mb-8 w-full text-left text-sm text-gray-500 w-12/12">
-				<thead class="bg-light text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+				<thead class="bg-light text-xs uppercase text-gray-700  ">
 					<tr>
 						<th class="px-2 py-1">Imię </th>
 
@@ -256,25 +256,21 @@
 				</thead>
 				<TableBody class="divide-y">
 					{#each round as match (match.id)}
-						<tr
-							class="bg-white dark:border-gray-700  odd:bg-white even:bg-light  hover:bg-gray-100"
-						>
-							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+						<tr class="bg-white   odd:bg-white even:bg-light  hover:bg-gray-100">
+							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 ">
 								{match.playerWhite.name}
 							</td>
 
-							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 ">
 								{match.playerWhite.surname}
 								{match.playerWhite.score}
 							</td>
 
-							<td
-								class="px-2 py-1 flex h-20 whitespace-nowrap font-medium text-gray-900 dark:text-white"
-							>
+							<td class="px-2 py-1 flex h-20 whitespace-nowrap font-medium text-gray-900 ">
 								<select
 									on:click={() => saveResult()}
 									bind:value={match.result}
-									class="block w-full text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-sm p-2.5 mt-2"
+									class="block w-full text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500      text-sm p-2.5 mt-2"
 								>
 									{#each resultOptions as option (option.id)}
 										<option value={option.value}>
@@ -284,11 +280,11 @@
 								</select>
 							</td>
 
-							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 ">
 								{match.playerBlack.name}
 							</td>
 
-							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+							<td class="px-2 py-1 whitespace-nowrap font-medium text-gray-900 ">
 								{match.playerBlack.surname}
 								{match.playerBlack.score}
 							</td>
