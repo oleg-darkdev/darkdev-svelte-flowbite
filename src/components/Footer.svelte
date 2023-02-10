@@ -18,7 +18,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div style="width: 300px;">
+		<div style="width: 180px;">
 			<h2 class="mb-6 text-sm font-semibold uppercase text-gray-400">{secondColumnData[0]}</h2>
 			<ul class="text-gray-300">
 				{#each secondColumnData[1] as data}
