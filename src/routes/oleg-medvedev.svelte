@@ -328,7 +328,7 @@
 		}
 		.photo-wrap {
 			height: 40vh;
-			margin-bottom: -40px;
+			/* margin-bottom: -40px; */
 			z-index: 20;
 		}
 		.contact {
