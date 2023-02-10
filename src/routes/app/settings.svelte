@@ -1,7 +1,7 @@
 <script>
-	import Tabs from '../components/Tabs.svelte';
-	import Form from '../components/settings/Form.svelte';
-	import InfoCard from '../components/settings/InfoCard.svelte';
+	import Tabs from '../../components/app/Tabs.svelte';
+	import Form from '../../components/app/settings/Form.svelte';
+	import InfoCard from '../../components/app/settings/InfoCard.svelte';
 </script>
 
 <svelte:head>
