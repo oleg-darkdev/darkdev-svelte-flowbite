@@ -110,9 +110,9 @@
 			description: 'Wykorzystywane przy organizowaniu turniejów szachowych i warcabow, w Sopocie.'
 		},
 		{
-			title: 'Adaptacyjny wygląd',
+			title: 'Adaptacyjny Interfejs',
 			img: '/app/about_3.svg',
-			description: 'Adaptacyjny wygląd dla telefonów i komputerów.'
+			description: 'Interfejs dostosowuje się do różnych urządzeń - od telefonu po komputery. Możesz zorganizować turniej mając do dyspozycji tylko swój telefon.'
 		},
 		{
 			title: 'Bezpieczeństwo danych',
