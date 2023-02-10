@@ -1,7 +1,7 @@
 <script>
-	import NewPlayerModal from '../components/players/NewPlayerModal.svelte';
-	import Tabs from '../components/Tabs.svelte';
-	import PlayersTable from '../components/Table.svelte';
+	import NewPlayerModal from '../../components/app/players/NewPlayerModal.svelte';
+	import Tabs from '../../components/app/Tabs.svelte';
+	import PlayersTable from '../../components/app/Table.svelte';
 
 	$: showNewPlayerForm = false;
 </script>

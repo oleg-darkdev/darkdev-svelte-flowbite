@@ -1,6 +1,6 @@
 <script>
-	import Tabs from '../components/Tabs.svelte';
-	import RoundTable from '../components/rounds/RoundTable.svelte';
+	import Tabs from '../../components/app/Tabs.svelte';
+	import RoundTable from '../../components/app/rounds/RoundTable.svelte';
 	// import Btns from '../components/rounds/Btns.svelte';
    	// let tournamentData;
 

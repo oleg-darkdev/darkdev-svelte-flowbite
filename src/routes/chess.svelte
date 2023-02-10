@@ -7,6 +7,7 @@
 	import Footer from '../components/Footer.svelte';
 	import ListTournaments from '../components/tournaments/ListTournaments.svelte';
 	import tournamentData from '../data/chessTurnamentsList';
+	import DescriptionChess from '../components/DescriptionChess.svelte';
 
 	let firstColumnData = [
 		'Turniej warcabowy: Żółty Pionek',
@@ -60,7 +61,7 @@
 			{
 				title: 'Lorem',
 				link: ''
-			},
+			}
 		]
 	];
 	let thirdColumnData = [
@@ -244,52 +245,32 @@
 			data-aos-mirror="true"
 			class="m-1 h-auto rounded-lg max-w-2xl bg-dark lg:p-8 md:p-8 p-2 flex flex-col items-center"
 		>
-			<h2
-				class="w-full text-center text-white font-impact lg:text-5xl md:text-4xl text-4xl max-w-3xl "
-			>
-				Turniej szachowy "Żółty Słoń"
-			</h2>
-			<div
-				class="mb-10 text-center font-bold text-light border rounded-lg border-light max-w-sm p-2 h-auto  "
-			>
-				<p class="text-gray-100 text-2xl mb-4 text-center">
-					Turniej odbywa się każda środa w pierwszym tygodniu miesiąca.
-				</p>
-				<p class="text-light text-gray-100 font-regular text-3xl text-center">
-					Początek o <span class="text-light font-impact text-4xl">17:00</span>
-				</p>
-				<p class="text-light text-gray-100 text-3xl  text-center">
-					Koniec o <span class="text-light font-impact text-4xl">19:45</span>
-				</p>
-			</div>
-
-			<p class="text-gray-100 text-2xl mb-4 text-center">
-				W tym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych
-				bardziej zaawansowanych graczy. <span class="text-light ">Ranking graczy 1400-2000.</span>
-			</p>
-			<p class="text-gray-100 text-2xl mb-4 text-center">
-				Uczestnictwo jest bezpłatne. Zgłoszenie rejestrowane drogą mailową <span
-					class="inline-flex items-center  text-light ">yellow_elephant.pl@outlook.com</span
-				>, oraz poprzez zapisy przed rozpoczęciem turnieju.
-			</p>
-			<!-- <p class="text-gray-100 text-2xl mb-4">
+			<DescriptionChess>
+				<div slot="text">
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						W tym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych
+						bardziej zaawansowanych graczy. <span class="text-light "
+							>Ranking graczy 1400-2000.</span
+						>
+					</p>
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						Uczestnictwo jest bezpłatne. Zgłoszenie rejestrowane drogą mailową <span
+							class="inline-flex items-center  text-light ">yellow_elephant.pl@outlook.com</span
+						>, oraz poprzez zapisy przed rozpoczęciem turnieju.
+					</p>
+					<!-- <p class="text-gray-100 text-2xl mb-4">
             Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
         </p>     -->
-			<p class="text-gray-100 text-2xl mb-4 text-center">
-				Ogłoszenia o terminach dostępne są w mediach socjalnych.
-			</p>
-			<div class="flex flex-row justify-center w-full mb-10">
-				{#each socialMedia as media}
-					<a href={media.link}>
-						<img
-							alt={media.title}
-							src={media.img}
-							class="rounded-full w-16 h-16 m-1 hover:border-white hover:border-2 "
-						/>
-					</a>
-				{/each}
-			</div>
-			<Timer />
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						Ogłoszenia o terminach dostępne są w mediach socjalnych.
+					</p>
+				</div>
+
+
+				<div slot="timer">
+					<Timer />
+				</div>
+			</DescriptionChess>
 		</div>
 	</section>
 
@@ -329,7 +310,27 @@
 		<div
 			class="bg-light dark:bg-gray-800  rounded-lg  shadow-md flex max-w-2xl flex-col p-4 sm:p-8 text-center"
 		>
-			<BecomeOrganisator />
+			<BecomeOrganisator>
+				<div slot="text">
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						W tym turnieju szachów klasycznych znajdzie się miejsce zarówno dla amatorów jak i tych
+						bardziej zaawansowanych graczy. <span class="text-light "
+							>Ranking graczy 1400-2000.</span
+						>
+					</p>
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						Uczestnictwo jest bezpłatne. Zgłoszenie rejestrowane drogą mailową <span
+							class="inline-flex items-center  text-light ">yellow_elephant.pl@outlook.com</span
+						>, oraz poprzez zapisy przed rozpoczęciem turnieju.
+					</p>
+					<!-- <p class="text-gray-100 text-2xl mb-4">
+            Wpisowe wynosi 5 zł i jest płatne podczas rejestracji w formularzu turniejowym przed rozpoczęciem turnieju.
+        </p>     -->
+					<p class="text-gray-100 text-2xl mb-4 text-center">
+						Ogłoszenia o terminach dostępne są w mediach socjalnych.
+					</p>
+				</div>
+			</BecomeOrganisator>
 
 			<div class="flex flex-col flex-wrap w-full items-center">
 				<p class="text-white text-4xl m-1 max-w-2xl text-center" />
@@ -441,35 +442,5 @@
 <Footer {firstColumnData} {secondColumnData} {thirdColumnData} />
 
 <style>
-	.banner {
-		background-image: url(/banner.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-	}
 
-	@media (min-width: 1024px) {
-		.banner {
-			height: 800px;
-			background-size: contain;
-		}
-	}
-
-	@media (min-width: 760px) and (max-width: 1024px) {
-		.banner {
-			height: 70vh;
-			background-size: cover;
-		}
-	}
-
-	@media (max-width: 760px) {
-		.banner {
-			height: 50vh;
-			background-size: cover;
-		}
-	}
-
-	.partners {
-		min-height: 400px;
-		height: auto;
-	}
 </style>
