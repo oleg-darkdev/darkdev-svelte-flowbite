@@ -90,7 +90,7 @@
 	});
 
 	const tournamentDay = '1/',
-		tournamentMonth = '03/';
+		tournamentMonth = '04/';
 
 	// Timer
 	async function startTimer() {
