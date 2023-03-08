@@ -7,13 +7,25 @@
 >
 	{#each tournamentData.schedule as tournament}
 		<li
-			class="py-2 px-4 w-full text-gray-900  text-sm font-medium first:rounded-t-lg last:rounded-b-lg hover:text-light hover:bg-dark"
+			class="py-2 px-4 w-full  text-gray-900  text-sm font-medium first:rounded-t-lg last:rounded-b-lg hover:border hover:border-2 hover:border-light hover:text-light hover:bg-dark"
 		>
 			<div class="flex items-center space-x-4 ">
+				<img
+					alt=""
+					src={tournament.status ? 'ended.svg' : 'current.svg'}
+					class="rounded w-20 h-20 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300"
+				/>
 				<div class="flex-1 min-w-0 ">
-					<p class="text-sm font-bold  truncate ">
+					<p class="text-2xl font-bold  truncate ">
 						{tournament.title}
 					</p>
+					<span
+						class="font-medium inline-flex items-center justify-center px-2.5 py-0.5 text-xs border  {tournament.status ? 'bg-dark text-light  border-light' : 'bg-light text-dark  border-dark'}  rounded"
+						>{tournament.status ? 'Już rozegrany' : 'Nadchodzący'}
+					</span>
+					<!-- <span class="text-xl font-regular text-light"
+						></span
+					> -->
 					<p class="text-sm  truncate ">
 						{tournament.addres}
 					</p>
