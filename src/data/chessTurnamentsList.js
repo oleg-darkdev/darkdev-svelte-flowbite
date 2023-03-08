@@ -89,7 +89,7 @@ const tournamentList = {
 			linkFb: '',
 			linkTg: '',
 			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
-			status: 0,
+			status: 1,
 
 			img: '',
 			title: '"Żółty słoń" #3'
