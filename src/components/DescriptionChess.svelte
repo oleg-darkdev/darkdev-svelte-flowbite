@@ -23,3 +23,4 @@
 </div>
 
 <slot name="timer" />
+<slot name="hronology" />
