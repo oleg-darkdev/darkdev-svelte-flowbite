@@ -25,7 +25,7 @@ const tournamentList = {
 	schedule: [
 		// {
 		// 	date: '06.09.2023',
-		// 	linkFb: '',
+		// 	linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 		// 	linkTg: '',
 		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 		// 			status: 0,
@@ -35,7 +35,7 @@ const tournamentList = {
 		// },
 		// {
 		// 	date: '09.08.2023',
-		// 	linkFb: '',
+		// 	linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 		// 	linkTg: '',
 		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 		// 			status: 0,
@@ -45,7 +45,7 @@ const tournamentList = {
 		// },
 		// {
 		// 	date: '05.07.2023',
-		// 	linkFb: '',
+		// 	linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 		// 	linkTg: '',
 		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 		// 			status: 0,
@@ -55,7 +55,7 @@ const tournamentList = {
 		// },
 		// {
 		// 	date: '07.06.2023',
-		// 	linkFb: '',
+		// 	linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 		// 	linkTg: '',
 		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 		// status: 0,
@@ -65,7 +65,7 @@ const tournamentList = {
 		// },
 		// {
 		// 	date: '03.05.2023',
-		// 	linkFb: '',
+		// 	linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 		// 	linkTg: '',
 		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 		// status: 0,
@@ -75,18 +75,17 @@ const tournamentList = {
 		// },
 		{
 			date: '05.04.2023',
-			linkFb: '',
+			linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 			linkTg: '',
 			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 			status: 0,
-
 			img: '',
 			title: '"Żółty słoń" #4'
 		},
 
 		{
 			date: '01.03.2023',
-			linkFb: '',
+			linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 			linkTg: '',
 			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 			status: 1,
@@ -96,7 +95,7 @@ const tournamentList = {
 		},
 		{
 			date: '01.02.2023',
-			linkFb: '',
+			linkFb: 'https://www.facebook.com/yellow.elephant.tournament/',
 			linkTg: '',
 			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 			status: 1,
