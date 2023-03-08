@@ -13,7 +13,7 @@
 	import socialMedia from '../data/socialMedia';
 
 	let firstColumnData = [
-		'Turniej warcabowy: Żółty Pionek',
+		'Turniej szachowy "Żółty Słoń"',
 		[
 			{
 				title: 'O turnieju',
@@ -39,32 +39,32 @@
 	];
 
 	let secondColumnData = [
-		'Lorem',
+		`Partnerzy`,
 		[
 			{
-				title: 'Lorem',
+				title: 'Sopoteka',
+				link: 'https://www.mbp.sopot.pl/'
+			},
+			{
+				title: 'ITingo',
 				link: ''
 			},
 			{
-				title: 'Lorem',
+				title: '44games',
 				link: ''
 			},
 			{
-				title: 'Lorem',
-				link: ''
+				title: 'MasterMind',
+				link: 'https://www.linkedin.com/groups/8773508/'
 			},
-			{
-				title: 'Lorem',
-				link: ''
-			},
-			{
-				title: 'Lorem',
-				link: ''
-			},
-			{
-				title: 'Lorem',
-				link: ''
-			}
+			// {
+			// 	title: 'Lorem',
+			// 	link: ''
+			// },
+			// {
+			// 	title: 'Lorem',
+			// 	link: ''
+			// }
 		]
 	];
 	let thirdColumnData = [
@@ -217,6 +217,17 @@
 				<div slot="timer">
 					<Timer />
 				</div>
+				<div
+					slot="hronology"
+					id="hronology"
+					class="mb-4 max-w-2xl justify-center items-center bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4"
+				>
+					<h2 class="text-3xl max-w-xl text-center mb-2 font-impact text-light ">
+						Harmonogram turnieju szachowego "Żółty Słoń
+					</h2>
+
+					<ListTournaments {tournamentData} />
+				</div>
 			</DescriptionChess>
 		</div>
 	</section>
@@ -367,16 +378,19 @@
 		<Organisator />
 	</section>
 
-	<section id="hronology" class="w-full flex flex-col items-center pt-12 pb-12 h-auto">
-		<div
-			class="mb-4 max-w-2xl  bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4"
+	<!-- <section  class="w-full flex flex-col items-center pt-12 pb-12 h-auto">
+		<div id="hronology"
+			class="mb-4 max-w-2xl justify-center items-center bg-current text-gray-500 rounded-lg flex w-full flex-col p-2 sm:p-4"
 		>
-			<h2 class="text-4xl text-center mb-2 font-impact text-dark ">
-				Historia turnieju szachowego "Żółty Słoń
+			<h2 class="text-4xl max-w-xl text-center mb-2 font-impact text-dark ">
+				Harmonogram turnieju szachowego "Żółty Słoń
 			</h2>
+			<p class="text-2xl text-center font-bold mb-2 text-dark ">
+				Turniej odbywa się co miesiąc, w pierwszą środę miesiąca.
+			</p>
 			<ListTournaments {tournamentData} />
 		</div>
-	</section>
+	</section> -->
 
 	<!-- 
 <section class="w-full pt-12 pb-12 h-auto">
