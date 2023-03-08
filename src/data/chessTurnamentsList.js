@@ -31,7 +31,7 @@ const tournamentList = {
 		// 			status: 0,
 
 		// 	img: '',
-		// 	title: '"Żółty słoń" #10'
+		// 	title: '"Żółty słoń" #9'
 		// },
 		// {
 		// 	date: '09.08.2023',
@@ -41,7 +41,7 @@ const tournamentList = {
 		// 			status: 0,
 
 		// 	img: '',
-		// 	title: '"Żółty słoń" #9'
+		// 	title: '"Żółty słoń" #8'
 		// },
 		// {
 		// 	date: '05.07.2023',
@@ -51,7 +51,7 @@ const tournamentList = {
 		// 			status: 0,
 
 		// 	img: '',
-		// 	title: '"Żółty słoń" #8'
+		// 	title: '"Żółty słoń" #7'
 		// },
 		// {
 		// 	date: '07.06.2023',
@@ -61,7 +61,7 @@ const tournamentList = {
 		// status: 0,
 
 		// 	img: '',
-		// 	title: '"Żółty słoń" #7'
+		// 	title: '"Żółty słoń" #6'
 		// },
 		// {
 		// 	date: '03.05.2023',
@@ -71,18 +71,18 @@ const tournamentList = {
 		// status: 0,
 
 		// 	img: '"Żółty słoń" #4',
-		// 	title: '"Żółty słoń" #6'
-		// },
-		// {
-		// 	date: '05.04.2023',
-		// 	linkFb: '',
-		// 	linkTg: '',
-		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
-		// status: 0,
-
-		// 	img: '',
 		// 	title: '"Żółty słoń" #5'
 		// },
+		{
+			date: '05.04.2023',
+			linkFb: '',
+			linkTg: '',
+			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+			status: 0,
+
+			img: '',
+			title: '"Żółty słoń" #4'
+		},
 
 		{
 			date: '01.03.2023',
@@ -92,7 +92,7 @@ const tournamentList = {
 			status: 0,
 
 			img: '',
-			title: '"Żółty słoń" #4'
+			title: '"Żółty słoń" #3'
 		},
 		{
 			date: '01.02.2023',
@@ -100,16 +100,6 @@ const tournamentList = {
 			linkTg: '',
 			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
 			status: 1,
-			img: '',
-			title: '"Żółty słoń" #3'
-		},
-		{
-			date: '01.01.2023',
-			linkFb: '',
-			linkTg: '',
-			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
-			status: 1,
-
 			img: '',
 			title: '"Żółty słoń" #2'
 		},
