@@ -23,76 +23,105 @@ const tournamentList = {
 		}
 	],
 	schedule: [
-		{
-			date: '17.11.2022',
-			linkFb: 'https://www.facebook.com/events/3222760484644932',
-			linkTg: '',
-			addres: `Mazowiecka 26, Sopot`,
-			img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/312622489_1324585104612954_3132663826861128700_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=340051&_nc_ohc=WsEjQc2LJJ8AX8IKJOI&_nc_ht=scontent-frt3-1.xx&oh=00_AfCslML0jJGwWmQHW56v1tELm8o7OkJGB8UuHyWcAWSCUQ&oe=63AB009F',
-			title: 'Turnieje szachowy "Żółty słoń" #1'
-		},
+		// {
+		// 	date: '06.09.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// 			status: 0,
+
+		// 	img: '',
+		// 	title: '"Żółty słoń" #10'
+		// },
+		// {
+		// 	date: '09.08.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// 			status: 0,
+
+		// 	img: '',
+		// 	title: '"Żółty słoń" #9'
+		// },
+		// {
+		// 	date: '05.07.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// 			status: 0,
+
+		// 	img: '',
+		// 	title: '"Żółty słoń" #8'
+		// },
+		// {
+		// 	date: '07.06.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// status: 0,
+
+		// 	img: '',
+		// 	title: '"Żółty słoń" #7'
+		// },
+		// {
+		// 	date: '03.05.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// status: 0,
+
+		// 	img: '"Żółty słoń" #4',
+		// 	title: '"Żółty słoń" #6'
+		// },
+		// {
+		// 	date: '05.04.2023',
+		// 	linkFb: '',
+		// 	linkTg: '',
+		// 	addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+		// status: 0,
+
+		// 	img: '',
+		// 	title: '"Żółty słoń" #5'
+		// },
+
 		{
 			date: '01.03.2023',
 			linkFb: '',
 			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
+			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+			status: 0,
 
 			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #2'
+			title: '"Żółty słoń" #4'
 		},
 		{
-			date: '05.04.2023',
+			date: '01.02.2023',
 			linkFb: '',
 			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
-
+			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+			status: 1,
 			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #3'
+			title: '"Żółty słoń" #3'
 		},
 		{
-			date: '03.05.2023',
+			date: '01.01.2023',
 			linkFb: '',
 			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
+			addres: `T. Kościuszki 14, 81-704, Sopot, Polska - "Sopoteka" `,
+			status: 1,
 
 			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #4'
+			title: '"Żółty słoń" #2'
 		},
 		{
-			date: '07.06.2023',
-			linkFb: '',
+			date: '17.11.2022',
+			linkFb: 'https://www.facebook.com/events/3222760484644932',
 			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
+			status: 1,
 
-			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #5'
-		},
-		{
-			date: '05.07.2023',
-			linkFb: '',
-			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
-
-			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #6'
-		},
-		{
-			date: '09.08.2023',
-			linkFb: '',
-			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
-
-			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #7'
-		},
-		{
-			date: '06.09.2023',
-			linkFb: '',
-			linkTg: '',
-			addres: `"Sopoteka" - T. Kościuszki 14, 81-704, Sopot, Polska`,
-
-			img: '',
-			title: 'Turnieje szachowy "Żółty słoń" #7'
+			addres: `Mazowiecka 26, Sopot`,
+			img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/312622489_1324585104612954_3132663826861128700_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=340051&_nc_ohc=WsEjQc2LJJ8AX8IKJOI&_nc_ht=scontent-frt3-1.xx&oh=00_AfCslML0jJGwWmQHW56v1tELm8o7OkJGB8UuHyWcAWSCUQ&oe=63AB009F',
+			title: '"Żółty słoń" #1'
 		}
 	]
 };
